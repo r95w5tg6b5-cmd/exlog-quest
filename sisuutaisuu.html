@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eaf8ff"><title>指数・対数 QUEST v17｜CONNECT プレビュー・段階別ヒント</title><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eaf8ff"><title>指数・対数 QUEST v21｜選べる解答モード</title><style>
 :root{color-scheme:dark}html,body{margin:0;min-height:100%;background:#081322}#eqr{font:14px/1.65 system-ui,-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;color:#eff8ff;background:radial-gradient(circle at 80% 0%,#352f65 0,transparent 41%),radial-gradient(circle at 0% 34%,#155865 0,transparent 45%),#091525;min-height:100vh;position:relative;overflow:hidden;isolation:isolate}#eqr *{box-sizing:border-box}#eqr button{font:inherit;cursor:pointer}#eqr button:disabled{opacity:.4;cursor:default}#eqr button:focus-visible{outline:3px solid #fff0a3;outline-offset:2px}#eqr h1,#eqr h2,#eqr h3,#eqr p{margin:0}#eqr .wrap{max-width:980px;margin:auto;padding:15px}#eqr .top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:4px 0 12px;border-bottom:1px solid #3c5d77;margin-bottom:14px}#eqr .brand{font-weight:950;font-size:17px;letter-spacing:.03em}#eqr .brand span{color:#8af0d2}#eqr .right{display:flex;align-items:center;gap:7px}#eqr .sub{font-size:12px;color:#adc4d7}#eqr .gold{color:#ffdc8d}#eqr .eyebrow{font-size:11px;color:#8af1d4;font-weight:900;letter-spacing:.11em}#eqr .btn{border:1px solid #52718b;border-radius:10px;background:#29435c;color:#f5fbff;padding:9px 13px;font-weight:850;min-height:40px}#eqr .btn:hover:not(:disabled){border-color:#98f1d6}#eqr .primary{background:linear-gradient(115deg,#8decd5,#c4efac);color:#103c3c;border:0;box-shadow:0 4px #367d72}#eqr .primary:active{box-shadow:0 2px #367d72;transform:translateY(2px)}#eqr .hero{display:flex;align-items:center;justify-content:space-between;padding:25px;border:1px solid #577f91;border-radius:17px;background:linear-gradient(120deg,#195b70bb,#35356cb8);overflow:hidden;position:relative}#eqr .hero h1{font-size:clamp(25px,5vw,37px);line-height:1.3;margin:8px 0 12px}#eqr .hero p{max-width:560px;color:#deebfa;margin-bottom:17px}#eqr .herochar{font-size:76px;text-shadow:0 0 27px #adf7e5;animation:eqrFloat 2.3s infinite ease-in-out;white-space:nowrap}#eqr .headsection{display:flex;justify-content:space-between;gap:9px;align-items:center;font-weight:900;margin:17px 1px 10px}#eqr .map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}#eqr .stage{background:linear-gradient(135deg,#1b354e,#14243b);border:1px solid #3d5973;text-align:left;border-radius:13px;min-height:125px;color:#f5fcff;padding:12px;transition:transform .18s,border-color .18s}#eqr .stage:hover{transform:translateY(-3px);border-color:#9decda}#eqr .stage.boss{background:linear-gradient(120deg,#51374c,#292447);border-color:#b69282}#eqr .stage .em{font-size:28px;display:block}#eqr .stage strong{display:block;font-size:14px;margin-top:5px}#eqr .stage small{display:block;font-size:11px;color:#adc7db}#eqr .stars{font-size:17px;letter-spacing:2px;color:#ffe39f}#eqr .progress{border-radius:100px;background:#30495d;height:10px;overflow:hidden}#eqr .progress div{height:100%;background:linear-gradient(90deg,#77e6cf,#ffe49b);transition:width .4s}#eqr .card{background:linear-gradient(138deg,#1b334e,#112239);border:1px solid #416079;border-radius:14px;padding:16px}#eqr .learnHead{display:flex;align-items:center;gap:12px;margin:6px 0 16px}#eqr .learnHead .em{font-size:49px}#eqr h2{font-size:clamp(20px,3.5vw,27px)}#eqr .rule{background:#24445a;border-left:3px solid #8becce;border-radius:8px;padding:11px 13px;margin:12px 0}#eqr .rule strong{color:#baffeb}#eqr .worked{background:#4a402e9c;border:1px solid #a58a57;border-radius:9px;padding:12px;margin:13px 0}#eqr .math{display:inline-flex;align-items:center;vertical-align:middle;white-space:nowrap;margin:0 .07em;max-width:100%}#eqr math{font-family:'STIX Two Math','Cambria Math',serif}#eqr .mathline{line-height:2.3;overflow-x:auto;overflow-y:hidden;padding:3px 0}#eqr .mathline .math{font-size:1.2em}#eqr .actions{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;margin-top:13px}#eqr .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:12px 0}#eqr .stat{border:1px solid #405c78;border-radius:10px;background:#203952;padding:7px 9px}#eqr .stat small{display:block;color:#b6cddd;font-size:10px}#eqr .stat b{font-size:16px}#eqr .battle{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,1fr);gap:10px;align-items:start}#eqr .arena{position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 70% 40%,#4e6681 0,#203852 38%,#112138 72%);min-height:325px;border:1px solid #56738b;border-radius:14px}#eqr .sky{position:absolute;inset:0;background-image:radial-gradient(#ffffffaa 1px,transparent 1px),radial-gradient(#8cead06e 1px,transparent 1px);background-size:51px 62px,83px 98px;background-position:13px 20px,37px 58px;opacity:.65;animation:eqrSky 22s linear infinite}#eqr .moon{position:absolute;right:18%;top:27px;border:2px solid #f8eeb6aa;border-radius:100%;width:72px;height:72px;box-shadow:0 0 35px #e2e7ae44,inset 0 0 30px #f0e4b555}#eqr .ground{position:absolute;bottom:-10px;left:-10%;width:120%;height:85px;border-radius:50% 50% 0 0;background:radial-gradient(ellipse at 50% 0,#2c716f,#15434d 45%,#101d32 82%);border-top:3px solid #76c8ac55}#eqr .unit{position:absolute;bottom:55px;display:flex;flex-direction:column;align-items:center;z-index:2}#eqr .heroUnit{left:5%}#eqr .enemyUnit{right:3%}#eqr .nameplate{background:#081b2caa;padding:3px 9px;border-radius:8px;font-size:11px;white-space:nowrap;border:1px solid #64889866;margin-top:5px;font-weight:900}#eqr .unit .sprite{font-size:clamp(50px,8vw,90px);line-height:1.5;display:block;filter:drop-shadow(0 13px 5px #061420);animation:eqrFloat 2.6s ease-in-out infinite;transform-origin:center bottom}#eqr .heroUnit .sprite{animation-delay:.4s}#eqr .enemyUnit .sprite{animation-delay:0s}#eqr .hpbar{height:9px;border-radius:30px;background:#3f4e63;overflow:hidden;margin:7px 0 4px}#eqr .hpbar div{background:linear-gradient(90deg,#76e8c5,#ffe39e);height:100%;transition:width .55s}#eqr .unitstatus{position:absolute;bottom:8px;left:12px;right:12px;z-index:3}#eqr .hud{background:#0b2136a9;border:1px solid #66869988;border-radius:9px;padding:6px 9px;font-size:12px;display:flex;justify-content:space-between;gap:7px}#eqr .enemyHUD{top:10px;bottom:auto;left:auto;right:10px;max-width:55%}#eqr .shot{display:none;position:absolute;left:20%;bottom:124px;width:38px;height:38px;border-radius:50%;background:#b9faff;box-shadow:0 0 14px 5px #9afbea,0 0 45px 22px #80cfffaa;z-index:7}#eqr .slash{display:none;position:absolute;top:36%;right:8%;width:48%;height:90px;border-top:12px solid #fce9a4;border-radius:100%;transform:rotate(-35deg);filter:drop-shadow(0 0 17px #ffe3a3);z-index:8}#eqr .damage{display:none;position:absolute;right:14%;top:18%;font-size:28px;font-weight:950;color:#fff0ab;text-shadow:0 2px 9px #000;z-index:9}#eqr .hurt{display:none;position:absolute;left:11%;top:20%;font-weight:950;font-size:29px;color:#ffb7bd;text-shadow:0 2px 9px #000;z-index:9}#eqr .enemyUnit.hit .sprite{animation:eqrHit .8s both}#eqr .enemyUnit.die .sprite{animation:eqrDie 1.35s both}#eqr .heroUnit.hurted .sprite{animation:eqrHeroHit .9s both}#eqr .arena.attacking .shot,#eqr .arena.finisher .shot{display:block;animation:eqrShot .6s ease-in forwards}#eqr .arena.attacking .slash,#eqr .arena.finisher .slash{display:block;animation:eqrSlash .7s forwards}#eqr .arena.attacking .damage,#eqr .arena.finisher .damage{display:block;animation:eqrRise 1.15s forwards}#eqr .arena.enemyattack .hurt{display:block;animation:eqrRise 1.15s forwards}#eqr .arena.enemyattack{animation:eqrQuake .45s}#eqr .banner{position:absolute;z-index:12;inset:0;display:grid;place-items:center;pointer-events:none;background:#132c3c88;animation:eqrFade 1.7s forwards}#eqr .banner b{font-size:clamp(26px,5vw,47px);color:#fff0ac;text-shadow:0 0 22px #ffc86c;transform:rotate(-6deg);animation:eqrZoom 1s both}#eqr .particle{position:absolute;top:var(--top);left:var(--left);width:var(--sz);height:var(--sz);background:var(--clr);border-radius:2px;pointer-events:none;z-index:14;animation:eqrParticle 1.6s ease-out forwards;animation-delay:var(--delay)}#eqr .challenge .question{font-size:clamp(18px,2.4vw,23px);font-weight:900;line-height:2.1;margin:9px 0 11px;overflow-x:auto}#eqr .choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#eqr .option{min-height:59px;border:2px solid #516d86;border-radius:10px;background:#28405a;color:#f1f9ff;font-weight:800;padding:8px 7px;text-align:left;overflow-x:auto}#eqr .option.selected{border-color:#f8dc94;background:#514b37}#eqr .option.correct{background:#155448;border-color:#7be9b4}#eqr .option.wrong{background:#563045;border-color:#eb92ad}#eqr .choiceletter{font-size:11px;color:#dbecf8;margin-right:6px;border:1px solid #63849c;border-radius:4px;padding:2px 5px}#eqr .feedback{padding:11px 12px;margin-top:12px;border:1px solid #7dddb7;border-radius:10px;background:#1b4c44;line-height:1.9}#eqr .feedback.no{border-color:#d28ba2;background:#4d3044}#eqr .hint{background:#53472f;border:1px solid #a18e52;border-radius:10px;padding:10px;margin-top:9px}#eqr .battletip{font-size:11px;color:#b8cede;margin-top:6px}#eqr .result{max-width:680px;text-align:center;margin:20px auto}#eqr .big{font-size:75px;display:block}#eqr .revisions{text-align:left;background:#233d55;border:1px solid #557189;border-radius:10px;padding:12px;margin:13px 0}#eqr .rev{border-top:1px solid #476880;padding:8px 0;margin-top:8px}#eqr .graph{background:#0a2030;border:1px solid #405f78;border-radius:12px;padding:10px;margin:12px 0}#eqr .graph svg{width:100%;max-width:480px;display:block;margin:auto}#eqr .gcontrols{display:flex;gap:6px;justify-content:center;align-items:center;flex-wrap:wrap;margin:6px 0}#eqr .gcontrols .btn{min-height:34px;padding:5px 11px}#eqr input[type=range]{accent-color:#8aebd5;width:min(100%,350px)}#eqr .levelup{margin:12px auto;max-width:280px;padding:10px;border:2px solid #e5d18e;border-radius:12px;background:#63502f;color:#fff2b3;font-size:22px;font-weight:950;animation:eqrZoom 1s both;box-shadow:0 0 27px #e6d58566}#eqr .footer{text-align:center;color:#a9bed0;font-size:11px;padding:14px}#eqr .toast{position:absolute;z-index:30;top:72px;left:50%;transform:translateX(-50%);border:1px solid #e6d39a;border-radius:11px;background:#413e36;color:#ffeca8;font-size:20px;font-weight:900;white-space:nowrap;padding:10px 19px;animation:eqrToast 2s forwards;pointer-events:none}
 @keyframes eqrFloat{50%{transform:translateY(-9px)}}@keyframes eqrSky{to{background-position:145px 20px,-120px 58px}}@keyframes eqrHit{25%{transform:translate(19px,-7px) rotate(18deg);filter:brightness(3)}52%{transform:translate(-12px,3px) rotate(-9deg)}100%{transform:none}}@keyframes eqrHeroHit{25%{transform:translate(-16px,7px) rotate(-15deg);filter:brightness(3)}60%{transform:translate(13px,0) rotate(8deg)}100%{transform:none}}@keyframes eqrDie{12%{transform:scale(1.25);filter:brightness(3)}45%{transform:rotate(30deg) scale(.9)}100%{transform:translate(45px,78px) rotate(110deg) scale(.05);opacity:0}}@keyframes eqrShot{0%{transform:translate(0,0) scale(.3);opacity:0}20%{opacity:1}100%{transform:translate(270px,-35px) scale(1.6);opacity:0}}@keyframes eqrSlash{0%{transform:translate(-130px,75px) rotate(-35deg) scale(.2);opacity:0}45%{opacity:1}100%{transform:translate(80px,-60px) rotate(-35deg) scale(1.3);opacity:0}}@keyframes eqrRise{0%{opacity:0;transform:translateY(18px)}30%{opacity:1}100%{opacity:0;transform:translateY(-50px)}}@keyframes eqrQuake{20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}@keyframes eqrFade{0%,65%{opacity:1}100%{opacity:0}}@keyframes eqrZoom{0%{transform:scale(.3) rotate(-11deg)}60%{transform:scale(1.15) rotate(-4deg)}100%{transform:scale(1) rotate(-5deg)}}@keyframes eqrParticle{to{transform:translate(var(--dx),var(--dy)) rotate(660deg);opacity:0}}@keyframes eqrToast{0%{opacity:0;transform:translate(-50%,-15px)}15%,75%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-20px)}}
 @media(max-width:670px){#eqr .battle{grid-template-columns:1fr}#eqr .arena{min-height:255px}#eqr .unit{bottom:44px}#eqr .unit .sprite{font-size:65px}#eqr .hero{padding:17px}#eqr .herochar{display:none}#eqr .map{grid-template-columns:repeat(2,minmax(0,1fr))}#eqr .stat b{font-size:12px}#eqr .card{padding:12px}#eqr .option{font-size:13px}#eqr .wrap{padding:10px}#eqr .right{flex-wrap:wrap}}
@@ -528,7 +528,143 @@ html,body{background:#eaf6ff}
 #eqr .connectMasteryLog li{margin:5px 0;font-size:14px}
 #eqr .connectMasteryLog small{color:#647b87}
 @media(max-width:500px){#eqr .connectMasteryDashboard{grid-template-columns:1fr}#eqr .connectMasteryPanel{padding:13px}#eqr .connectMasteryDashboard strong{font-size:27px}}
-</style><script id="collector-config" type="application/json">{"url":"","classCode":""}</script><script id="teacher-preset" type="application/json">{"teacher":{"stages":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],"pageFrom":174,"pageTo":204,"difficulty":"all","freeMode":"mixed","example":"","masteryTarget":4}}</script></head><body><main id="eqr"><div class="wrap"><div id="eqrApp"></div></div></main><script>
+
+/* v18: tactile, no-TeX math entry; graph sketch and per-question history. */
+#eqr .connectPick .connectTryCounts{display:block;font-weight:750;color:#335c73;font-size:12px;line-height:1.35;margin-top:3px}
+#eqr .connectPick.active .connectTryCounts{color:#e7f6ff}
+#eqr .mathComposer{border:2px solid #78b8d3;background:#f7fcff;border-radius:18px;padding:16px;margin:13px 0;box-shadow:0 5px 15px #123a5712}
+#eqr .mathComposer h3{font-size:19px;margin:0 0 6px;color:#123e59}
+#eqr .mathComposer p{color:#355c75;font-size:14px;margin:6px 0 12px;line-height:1.6}
+#eqr .mathEntry{min-height:100px;background:white;border:2px solid #b5d7ea;border-radius:14px;display:flex;align-items:center;flex-wrap:wrap;gap:4px;padding:12px;line-height:1.5;color:#102d47;overflow-wrap:anywhere}
+#eqr .mathEntry.empty{border-style:dashed}
+#eqr .mathField{display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:2px;min-height:39px;min-width:28px;padding:4px 6px;border:1px dashed #b1c8d9;background:#f8fcff;border-radius:6px;cursor:pointer;vertical-align:middle;font-size:22px}
+#eqr .mathField.current{outline:3px solid #ffba54;outline-offset:1px;background:#fff5dc}
+#eqr .mathField.rootField{min-width:90px;min-height:70px;justify-content:flex-start}
+#eqr .mathBlank{color:#8099ab;font-size:17px;opacity:.85}
+#eqr .mathChar{font-family:'Cambria Math','STIX Two Math',Georgia,serif;font-size:29px;line-height:1.45;padding:0 1px;color:#14334c}
+#eqr .mathFraction{display:inline-flex;flex-direction:column;align-items:stretch;min-width:58px;vertical-align:middle;margin:2px 4px}
+#eqr .mathFraction .mathField{min-height:38px;border-radius:5px;min-width:45px}
+#eqr .mathFracBar{display:block;width:100%;min-height:2px;height:2px;background:#1c3b51;margin:3px 0}
+#eqr .mathPower{display:inline-flex;align-items:flex-start;margin:2px 1px}
+#eqr .mathPower .mathField{min-width:28px;min-height:36px}
+#eqr .mathPower sup{margin-left:1px;font-size:16px;line-height:1.2}
+#eqr .mathPower sup .mathField{min-height:27px;min-width:25px;font-size:15px}
+#eqr .mathRadical{display:inline-flex;align-items:center;gap:0}
+#eqr .mathRadicalSign{font-size:37px;font-family:serif;color:#1e536f}
+#eqr .mathRadical .mathField{border-top:3px solid #244862;border-radius:0 5px 5px 0}
+#eqr .mathKeyboard{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin-top:14px}
+#eqr .mathKeyboard button{border:2px solid #b4cddd;border-radius:12px;background:#fff;color:#163c58;min-height:51px;font-size:21px;font-weight:850;touch-action:manipulation;cursor:pointer;padding:5px 2px}
+#eqr .mathKeyboard button.mathSpecial{background:#e8f2ff;border-color:#87b5d7;font-size:16px;grid-column:span 2;white-space:normal;line-height:1.25;padding:7px 2px}
+#eqr .mathKeyboard button.mathDel{background:#fff0e5;border-color:#e7c2a3;font-size:17px}
+#eqr .mathKeyboard button:active{transform:scale(.96);background:#d8ecff}
+#eqr .mathPadNote{display:block;color:#275a74;font-size:13px;margin-top:10px;line-height:1.5}
+#eqr .connectHistoryTopline{font-size:14px;color:#375874;margin:10px 0}
+#eqr .graphPractice{border:2px solid #8fb8d4;border-radius:17px;background:#f7fbff;padding:14px;margin:16px 0}
+#eqr .graphPractice h3{font-size:21px;color:#143e59;margin:0 0 5px}
+#eqr .graphPractice p{line-height:1.6;font-size:15px;color:#375f75;margin:5px 0 12px}
+#eqr .graphCanvas{display:block;width:100%;height:320px;background:#fff;border:2px solid #c3d9e8;border-radius:10px;touch-action:none;cursor:crosshair}
+#eqr .graphPracticeControls{display:flex;gap:8px;flex-wrap:wrap;margin:9px 0}
+#eqr .graphPracticeControls button{min-height:46px;font-size:16px}
+#eqr .graphCheck{display:grid;gap:10px;padding:12px;border-radius:12px;background:#eaf4fd;margin-top:12px}
+#eqr .graphCheck label{display:flex;align-items:flex-start;gap:10px;font-size:16px;font-weight:650;color:#173f5b;line-height:1.6}
+#eqr .graphCheck input{height:23px;width:23px;flex-shrink:0;margin-top:1px;accent-color:#176b94}
+#eqr .graphGraphHint{font-weight:800;color:#226085}
+#eqr .graphDescription{box-sizing:border-box;width:100%;min-height:100px;font:inherit;font-size:17px;border-radius:12px;border:2px solid #9cbfd4;padding:12px;color:#14344e;background:white}
+#eqr .connectSelfInstructions{border-left:5px solid #efb857;background:#fff9eb;border-radius:8px;padding:12px 15px;font-size:15px;line-height:1.65;margin-top:10px}
+@media(max-width:540px){#eqr .mathComposer{padding:11px}#eqr .mathKeyboard{gap:5px}#eqr .mathKeyboard button{min-height:47px;font-size:20px;border-radius:9px}#eqr .mathKeyboard button.mathSpecial{font-size:16px}#eqr .mathField{padding:3px;min-height:36px}#eqr .mathChar{font-size:25px}#eqr .graphCanvas{height:265px}}
+/* v19: accessible learning interactions */
+#eqr .v19panel{background:linear-gradient(135deg,#eaf7ff,#ffffff);border:2px solid #9acdec;color:#163b59;border-radius:15px;padding:17px;margin:16px 0;box-shadow:0 5px 0 #12385217}
+#eqr .v19panel h3{color:#164667;font-size:19px;margin:0 0 9px}
+#eqr .v19panel p{color:#355873;font-size:14px;line-height:1.65;margin:7px 0}
+#eqr .v19panel .btn{min-height:48px}
+#eqr .v19panel .v19muted{color:#506b81;font-size:12px}
+#eqr .v19panel .v19flex{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:11px 0}
+#eqr .v19panel .v19choice{background:white;border:2px solid #8cb4d3;color:#134766;border-radius:11px;min-height:55px;min-width:64px;padding:10px 15px;font-size:21px;font-weight:850;box-shadow:0 3px #bbd7e7}
+#eqr .v19panel .v19choice:disabled{opacity:.35}
+#eqr .v19panel .v19choice[aria-pressed="true"],#eqr .v19panel .v19choice.selected{background:#ddf8e9;border-color:#21a675}
+#eqr .v19panel .v19slot{flex:1;min-width:84px;border:2px dashed #88b5d7;background:#f4fbff;border-radius:11px;padding:9px;text-align:center;min-height:77px;color:#144b70}
+#eqr .v19panel .v19slot small{display:block;color:#426c87;font-size:12px;font-weight:800;margin-bottom:5px}
+#eqr .v19panel .v19slot strong{font-size:21px;display:block;min-height:27px}
+#eqr .v19panel .v19steps{display:grid;gap:9px}
+#eqr .v19panel .v19step{display:flex;align-items:center;gap:9px;text-align:left;background:white;color:#174865;border:2px solid #b5d5e7;padding:12px;border-radius:12px;min-height:60px;width:100%}
+#eqr .v19panel .v19step .v19stepindex{background:#1479a6;color:white;font-size:15px;min-width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+#eqr .v19panel .v19result{font-size:15px;font-weight:850;color:#095f50;background:#ddf8e8;border-radius:10px;padding:10px}
+#eqr .v19panel .v19warning{color:#954e24;background:#fff1de}
+#eqr .v19panel .v19navbox{display:flex;gap:9px;flex-wrap:wrap;margin:10px 0}
+#eqr .v19panel .v19tag{display:inline-flex;background:#d8f3f4;color:#15536b;padding:5px 9px;border-radius:14px;font-weight:800;font-size:12px}
+#eqr .v19panel .v19fact{padding:10px;border:1px solid #b6d5e3;background:#fff;border-radius:10px;margin:7px 0;color:#20506c}
+#eqr .v19panel .v19fact summary{cursor:pointer;color:#155479;font-weight:900}
+#eqr .v19panel .v19fact li{margin:6px 0}
+#eqr .v19panel .v19challenge{border-radius:10px;padding:10px;background:#f0faff;border:1px solid #b8dce6}
+#eqr .v19mission{background:linear-gradient(120deg,#f9f4da,#e0f4fc);color:#1a415a;padding:18px;border-radius:16px;border:2px solid #d9b46b;margin:15px 0}
+#eqr .v19mission h2{font-size:21px;color:#654513}
+#eqr .v19mission p{font-size:14px;color:#38546a}
+#eqr .v19mission .v19missiongrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(154px,1fr));gap:9px;margin-top:12px}
+#eqr .v19mission .v19missionbutton{display:block;background:white;color:#144967;border:1px solid #8ebcd7;border-radius:11px;min-height:64px;text-align:left;padding:11px;font-size:15px;font-weight:800}
+#eqr .v19mission .v19missionbutton small{display:block;color:#44627e;font-size:12px;margin-top:6px}
+#eqr .v19graphTools{background:#f0f9ff;color:#1b4c65;border-radius:12px;padding:12px;margin:8px 0}
+#eqr .v19graphTools p{color:#264d68}
+#eqr .v19graphTools .v19flex{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+#eqr .v19graphTools button{background:white;color:#1a5576;min-height:49px;border:2px solid #a4c7dd;border-radius:9px;font-weight:900;font-size:14px}
+#eqr .v19graphTools button[aria-pressed="true"]{background:#d1f4df;border-color:#3ca985}
+#eqr .v19miniStat{font-size:13px;font-weight:900;color:#476782;display:block;margin-top:5px}
+#eqr .connectPick .v19miniStat{color:inherit;font-size:11px}
+#eqr .v19dueList{margin:10px 0}
+#eqr .v19dueList button{min-height:48px;margin:4px;padding:9px 11px;background:#fff;border:1px solid #73accd;border-radius:9px;color:#1b5476;font-weight:850}
+#eqr .v19badge{color:#8e5906;background:#fff1c4;padding:3px 7px;border-radius:12px;font-size:11px}
+#eqr .v19lessonButton{border:1px solid #317eae!important;background:#ebf7ff!important;color:#144769!important}
+@media(max-width:550px){#eqr .v19panel{padding:12px}#eqr .v19panel .v19slot{min-width:68px}#eqr .v19panel .v19choice{min-width:55px;font-size:19px;padding:8px 10px}#eqr .v19panel h3{font-size:17px}#eqr .v19mission .v19missiongrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style><script id="collector-config" type="application/json">{"url":"","classCode":""}</script><script id="teacher-preset" type="application/json">{"teacher":{"stages":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],"pageFrom":174,"pageTo":204,"difficulty":"all","freeMode":"mixed","example":"","masteryTarget":4}}</script><style id="v20-style">
+#eqr .v20-selection{background:linear-gradient(125deg,#22405c,#18374e);border:1px solid #85c4ce;border-radius:13px;padding:14px;margin:13px 0;color:#eefaff}
+#eqr .v20-choicebar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+#eqr .v20-choicebar button{min-height:48px;font-size:15px;padding:10px 13px}
+#eqr .v20-box{border:2px solid #5ab7c0;background:linear-gradient(140deg,#193c57,#182940);border-radius:15px;padding:13px;margin:13px 0;color:#eef8ff}
+#eqr .v20-open{width:100%;text-align:left;min-height:54px;font-size:16px;border:1px solid #66a3b0;border-radius:11px;padding:10px 13px;background:#254c68;color:#fff;font-weight:900}
+#eqr .v20-note{font-size:12px;color:#c0e6eb;margin:9px 0}
+#eqr .v20-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+#eqr .v20-tab{border:1px solid #749ab7;border-radius:9px;background:#263d55;color:#fff;padding:10px 13px;min-height:44px;font-weight:800}
+#eqr .v20-tab.selected{background:#a3edda;color:#103f4c;border-color:#d6fbdc}
+#eqr .v20-slots{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:8px;margin:12px 0}
+#eqr .v20-slot{border:2px solid #7796ac;border-radius:11px;padding:10px;background:#1c344d;color:#fff;min-height:80px}
+#eqr .v20-slot.active{border:2px solid #ffda84;background:#425078}
+#eqr .v20-slot small{display:block;font-size:12px;color:#c4dfeb;margin-bottom:5px}
+#eqr .v20-slot strong{display:block;text-align:center;font-size:23px;min-height:34px}
+#eqr .v20-parts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:10px 0}
+#eqr .v20-tile{border:1px solid #83a9ba;border-radius:12px;min-height:65px;padding:8px 4px;background:#eff9ff;color:#15374e;font-size:18px;font-weight:800;overflow-x:auto}
+#eqr .v20-tile .math{font-size:1.13em}
+#eqr .v20-steps{display:grid;grid-template-columns:1fr;gap:7px;margin:12px 0}
+#eqr .v20-stepcard{min-height:52px;text-align:left;border-radius:10px;border:1px solid #80adbf;background:#f0faff;color:#15364a;padding:10px 12px;line-height:1.8;font-size:15px}
+#eqr .v20-stepcard:disabled{opacity:.47}
+#eqr .v20-ordered{padding:10px 14px;background:#20384e;border-radius:10px;line-height:2}
+#eqr .v20-ordered li{padding:4px 2px}
+#eqr .v20-result{margin-top:10px;background:#244b45;border:1px solid #93e2b5;padding:10px;border-radius:10px;font-weight:800}
+#eqr .v20-result.warn{background:#56343f;border-color:#ffa8ab}
+#eqr .v20-help{background:#34516a;border-radius:8px;padding:10px 12px;margin:9px 0;font-size:13px}
+#eqr .v20-foot{font-size:12px;color:#c1dce9;margin-top:7px}
+@media(max-width:520px){#eqr .v20-parts{grid-template-columns:repeat(3,minmax(0,1fr))}#eqr .v20-tile{min-height:58px;font-size:17px}#eqr .v20-choicebar button{flex:1}#eqr .v20-box{padding:10px}#eqr .v20-slot{min-height:73px}}
+
+/* v21 - distinct, optional response modes */
+#eqr .v21-modepanel{border:2px solid #8cc7d7;background:#f4fbff;color:#22445a;border-radius:18px;padding:17px;margin:14px 0}
+#eqr .v21-modepanel h3{color:#22445a;font-size:21px;margin:0 0 7px}
+#eqr .v21-modepanel p{margin:5px 0 12px;color:#557083;line-height:1.6;font-size:14px}
+#eqr .v21-modegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#eqr .v21-modecard{border:2px solid #b0d5e0;background:#fff;border-radius:15px;min-height:112px;color:#25485c;text-align:left;padding:15px 14px;display:flex;flex-direction:column;gap:5px;justify-content:center;cursor:pointer;box-shadow:0 2px 0 #cddfe6}
+#eqr .v21-modecard strong{font-size:19px;line-height:1.4;color:inherit}
+#eqr .v21-modecard small{color:#587587;font-weight:650;font-size:13px;line-height:1.6}
+#eqr .v21-modecard .v21-count{font-size:12px;color:#2e677b}
+#eqr .v21-modecard.chosen{border-color:#0da890;background:#e6fff4;color:#0c6050;box-shadow:0 0 0 2px #9bedc8}
+#eqr .v21-modecard:disabled{opacity:.5;cursor:not-allowed}
+#eqr .v21-subtoggle{margin:15px 0 0;display:flex;gap:10px;align-items:center;background:#e5f1f7;border-radius:11px;padding:12px;color:#27495a;cursor:pointer;font-size:14px;line-height:1.6}
+#eqr .v21-subtoggle input{width:22px;height:22px;flex:none;accent-color:#0c9e84}
+#eqr .v21-info{font-size:13px;line-height:1.65;color:#436a7b;margin-top:12px}
+#eqr .v21-modepill{font-weight:900;display:inline-block;margin:0 0 10px;background:#d8fff0;color:#125b4c;border-radius:99px;padding:7px 14px;font-size:14px}
+#eqr .v21-puzzle-direction{border:2px solid #8bcbbb;padding:13px 16px;border-radius:13px;background:#e6fff5;color:#125649;font-weight:800;margin-bottom:14px;line-height:1.8;font-size:16px}
+#eqr .v21-blocked{background:#fff6d9;border:1px solid #ecc879;border-radius:10px;color:#775914;padding:10px 12px;margin:8px 0;line-height:1.7}
+#eqr .v21-home-selection{margin-bottom:17px}
+#eqr .v21-mainmode-title{font-size:17px;font-weight:850}
+#eqr .v21-optional{color:#486b7f}
+@media(max-width:640px){#eqr .v21-modegrid{grid-template-columns:1fr 1fr;gap:8px}#eqr .v21-modecard{padding:11px 10px;min-height:105px}#eqr .v21-modecard strong{font-size:16px}#eqr .v21-modecard small{font-size:12px}#eqr .v21-modepanel{padding:12px}#eqr .v21-modepanel h3{font-size:18px}}
+</style></head><body><main id="eqr"><div class="wrap"><div id="eqrApp"></div></div></main><script>
 (()=>{'use strict';const T=String.raw,root=document.getElementById('eqrApp'),host=document.getElementById('eqr');const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 // TeX compiler for self-contained native MathML. No CDN, fonts or network required.
 function M(tex){let s=String(tex),i=0;const tag=(n,v)=>`<${n}>${v}</${n}>`;
@@ -1334,7 +1470,7 @@ function connectFilterMatch(state){return connectListFilter==='all'||(connectLis
 function connectPickButton(id,n,active=false){
  const st=connectRecordState(id,n);const isExample=String(id).startsWith('CONNECT');
  const label=(isExample?'CONNECT '+String(id).replace('CONNECT','')+' ':'CONNECT '+id+'番')+' ('+(n+1)+') '+st.label;
- return `<button type="button" class="connectPick status-${st.code} ${active?'active':''}" data-act="connectJump" data-id="${id}" data-part="${n}" title="${esc(label)}${st.recovered?' / ヒント・誤答を経て自力正解':''}" aria-label="${esc(label)}"><span class="connectPickLine"><b>(${n+1})</b><span class="connectHistoryMark" aria-hidden="true">${st.symbol}</span></span><small>${st.recovered?'自力でクリア！':st.label}</small></button>`;
+ return `<button type="button" class="connectPick status-${st.code} ${active?'active':''}" data-act="connectJump" data-id="${id}" data-part="${n}" title="${esc(label)}${st.recovered?' / ヒント・誤答を経て自力正解':''}" aria-label="${esc(label)}"><span class="connectPickLine"><b>(${n+1})</b><span class="connectHistoryMark" aria-hidden="true">${st.symbol}</span></span><small>${st.recovered?'自力でクリア！':st.label}</small><span class="connectTryCounts">${st.tries?`○${st.correct}回　×${st.wrong}回`:'未挑戦'}</span></button>`;
 }
 function connectPreviewHtml(id,n){
  const item=CONNECT_TEX_MAP[String(id)];if(!item)return '';
@@ -1371,7 +1507,7 @@ function connectGroupView(){
   return `<details class="connectSection" ${connectListFilter==='all'&&gi>0&&!g.items.some(t=>connectPeekKey.startsWith(String(t.id)+':'))?'':'open'}><summary>📖 ${esc(g.label)} <small class="sub">${rows.length}題 / ${rows.reduce((v,a)=>v+(a.match(/class="connectPick /g)||[]).length,0)}小問</small></summary><div class="connectListCards">${rows.join('')}</div></details>`;
  }).join('');
  const completed=total.mastered+total.assisted+total.correct+total.self;
- return `${head()}<div class="connectWelcome"><div class="eyebrow">CONNECT / 自力で解けた問題がわかる v17</div><h1>📗 CONNECT 問題一覧</h1><p>問題をプレビューしてから挑戦しよう。<b>○ ヒントなし正解</b>と<b>◐ ヒントあり正解</b>を分けて記録します。◐は次の挑戦で○に変えられるよ！</p>
+ return `${head()}<div class="connectWelcome"><div class="eyebrow">CONNECT / 問題別の解答・ヒント・採点履歴 v18</div><h1>📗 CONNECT 問題一覧</h1><p>プレビューから問題を選び、分数・累乗はタップで入力。グラフは座標軸に描こう。<b>○ ヒントなし正解</b>と<b>◐ ヒントあり正解</b>を分けて記録します。◐は次の挑戦で○に変えられるよ！</p>
  <div class="connectStats"><span class="connectStat">○ ${total.mastered} 自力正解</span><span class="connectStat">◐ ${total.assisted} ヒントあり</span><span class="connectStat">○ ${total.correct} 旧版記録</span><span class="connectStat">× ${total.wrong} 不正解</span><span class="connectStat">△ ${total.review} 要復習</span><span class="connectStat">☑ ${total.self} 自己確認</span><span class="connectStat">— ${total.untried} 未挑戦</span></div>
  <div class="connectProgress" title="確認済み ${completed} / ${total.total}"><div style="width:${completed/Math.max(1,total.total)*100}%"></div></div>
  <div class="connectMasteryDashboard"><div><b>🌟 自力で正解</b><strong>${total.mastered}<small> / ${total.total}小問</small></strong><p>今回のバージョン以降、ヒントなしで正解した小問</p></div><div><b>💡 次はヒントなしに挑戦</b><strong>${total.assisted}<small> 小問</small></strong><p>ヒントありで正解済み。再挑戦して○へ！</p></div></div>
@@ -1511,7 +1647,7 @@ function connectCheckCurrent(){
 function connectBeginIndependentRetry(){
  const id=mode==='connect-example'?'CONNECT'+connectExampleCurrent:connectCurrent,key=connectSubKey(id,connectIndex(id));
  connectSub.hints[key]=0;connectSub.roundHints[key]=0;
- delete connectSub.values[key];delete connectSub.feedback[key];saveConnectSub();render();
+ delete connectSub.values[key];delete connectSub.composers[key];delete connectSub.feedback[key];saveConnectSub();render();
  requestAnimationFrame(()=>root.querySelector('#connect-answer-box')?.focus());
 }
 function connectHintPanel(id,n){
@@ -1535,21 +1671,115 @@ function connectMasteryPanel(id,n,st){
  const retry=['mastered','assisted','correct','wrong'].includes(st.code)?'<button class="btn connectNoHintRetry" type="button" data-act="connectPracticeNoHint">🔄 ヒントなしで再挑戦</button>':'';
  return `<aside class="connectMasteryPanel status-${st.code}">${outcome}<div class="connectMasteryCount">ヒントなし正解 <b>${st.independent}回</b>　/　ヒントあり正解 <b>${st.assisted}回</b></div>${retry}${log}</aside>`;
 }
+
+/* v18: a visual math-input composer, with nested fraction / power / root fields.
+   Students never need to type slash or caret. Internal syntax stays hidden. */
+if(!connectSub.composers||typeof connectSub.composers!=='object')connectSub.composers={};
+if(!connectSub.graphInk||typeof connectSub.graphInk!=='object')connectSub.graphInk={};
+if(!connectSub.graphReview||typeof connectSub.graphReview!=='object')connectSub.graphReview={};
+if(!connectSub.written||typeof connectSub.written!=='object')connectSub.written={};
+const CONNECT_GRAPH_DRAW=new Set(['330','332','335','351','355']);
+const CONNECT_GRAPH_DESC=new Set(['331']);
+function connectIsGraphDraw(id){return CONNECT_GRAPH_DRAW.has(String(id))}
+function connectIsGraphDesc(id){return CONNECT_GRAPH_DESC.has(String(id))}
+function connectPadLegacy(raw){
+ const s=String(raw||'').trim();if(!s)return [];
+ let m=/^(-?)(\d+)\/(\d+)$/.exec(s);
+ if(m)return [...(m[1]?[{t:'c',v:'-'}]:[]),{t:'f',n:[...m[2]].map(v=>({t:'c',v})),d:[...m[3]].map(v=>({t:'c',v}))}];
+ m=/^([abx])\^\(?(-?\d+)\)?$/.exec(s);
+ if(m)return [{t:'p',b:[{t:'c',v:m[1]}],e:[...m[2]].map(v=>({t:'c',v}))}];
+ return [...s].map(v=>({t:'c',v})).slice(0,100);
+}
+function connectPadState(id,n){
+ const key=connectSubKey(id,n);
+ if(!connectSub.composers[key])connectSub.composers[key]={nodes:connectPadLegacy(connectSub.values[key]),path:'r'};
+ const c=connectSub.composers[key];if(!Array.isArray(c.nodes))c.nodes=[];if(typeof c.path!=='string')c.path='r';return c;
+}
+function connectPadResolve(c,path){
+ if(path==='r')return c.nodes;let a=c.nodes;
+ try{for(const bit of String(path).slice(2).split('/')){if(bit==='')continue;const m=/^(\d+)([ndbev])$/.exec(bit);if(!m)return c.nodes;const o=a[Number(m[1])];if(!o)return c.nodes;const name={n:'n',d:'d',b:'b',e:'e',v:'v'}[m[2]];a=o[name];if(!Array.isArray(a))return c.nodes;}return a}catch(err){return c.nodes}
+}
+function connectPadEncode(arr){return (arr||[]).map(x=>{
+ if(x.t==='c')return x.v==='×'?'*':x.v==='÷'?'/':x.v==='≦'?'<=':x.v==='≧'?'>=':x.v;
+ if(x.t==='f')return '('+connectPadEncode(x.n)+')/('+connectPadEncode(x.d)+')';
+ if(x.t==='p')return '('+connectPadEncode(x.b)+')^('+connectPadEncode(x.e)+')';
+ if(x.t==='s')return 'sqrt('+connectPadEncode(x.v)+')';return '';
+ }).join('');}
+function connectPadChars(arr,path,active){
+ const content=arr?.length?arr.map((t,i)=>{
+  if(t.t==='c'){let p=t.v==='-'?'−':t.v==='*'?'×':t.v==='/'?'÷':t.v;return '<span class="mathChar">'+esc(p)+'</span>'}
+  const head=path==='r'?'r/':path+'/';
+  if(t.t==='f')return '<span class="mathFraction">'+connectPadChars(t.n,head+i+'n',active)+'<i class="mathFracBar"></i>'+connectPadChars(t.d,head+i+'d',active)+'</span>';
+  if(t.t==='p')return '<span class="mathPower">'+connectPadChars(t.b,head+i+'b',active)+'<sup>'+connectPadChars(t.e,head+i+'e',active)+'</sup></span>';
+  if(t.t==='s')return '<span class="mathRadical"><span class="mathRadicalSign">√</span>'+connectPadChars(t.v,head+i+'v',active)+'</span>';
+  return '';
+ }).join(''):'<span class="mathBlank">□</span>';
+ return `<span role="button" tabindex="0" class="mathField ${path==='r'?'rootField ':''}${active===path?'current':''}" data-act="connectPadFocus" data-path="${esc(path)}" aria-label="${path==='r'?'答え':'式の一部分'}を入力する">${content}</span>`;
+}
+function connectPadHtml(id,n){
+ const c=connectPadState(id,n);
+ const keys=[['7','7'],['8','8'],['9','9'],['a','a'],['b','b'],['x','x'],['4','4'],['5','5'],['6','6'],['+','+'],['−','-'],['×','×'],['1','1'],['2','2'],['3','3'],['(', '('],[')', ')'],['÷','÷'],['0','0'],['.','.'],['=','='],['≦','≦'],['≧','≧'],['⌫','back']];
+ return `<div class="mathComposer" id="connect-math-composer"><h3>✏️ タップして数式を入力</h3><p>分子・分母や底・指数の<strong>□をタップして数字・文字を入れよう</strong>。入力のための特殊な記号を覚える必要はありません。</p><div class="mathEntry ${c.nodes.length?'':'empty'}" id="connect-math-entry" aria-label="入力した数式">${connectPadChars(c.nodes,'r',c.path)}</div><div class="mathKeyboard">${keys.map(([label,value])=>`<button type="button" data-act="connectPadKey" data-key="${esc(value)}" class="${value==='back'?'mathDel':''}">${label}</button>`).join('')}${[['分数','frac'],['累乗','pow'],['√ 根号','sqrt'],['次の□へ','next'],['すべて消す','clear'],['1つ戻る','up']].map(([label,value])=>`<button type="button" data-act="connectPadKey" data-key="${value}" class="mathSpecial">${label}</button>`).join('')}</div><span class="mathPadNote">分数は「分数」→ 分子 → 分母、累乗は「累乗」→ 底 → 指数の順です。左上の数式がそのまま採点されます。</span></div>`;
+}
+function connectPadSave(id,n){
+ const c=connectPadState(id,n),key=connectSubKey(id,n);connectSub.values[key]=connectPadEncode(c.nodes).slice(0,200);delete connectSub.feedback[key];saveConnectSub();
+ const wrap=root.querySelector('#connect-math-composer');if(wrap){const newDom=document.createElement('div');newDom.innerHTML=connectPadHtml(id,n);wrap.replaceWith(newDom.firstElementChild)}
+}
+function connectPadClick(value){
+ const id=mode==='connect-example'?'CONNECT'+connectExampleCurrent:connectCurrent,n=connectIndex(id),c=connectPadState(id,n);
+ let arr=connectPadResolve(c,c.path);
+ if(value==='clear'){c.nodes=[];c.path='r'}
+ else if(value==='back'){if(arr.length)arr.pop();else if(c.path!=='r'){c.path='r';arr=c.nodes;if(arr.length)arr.pop()}}
+ else if(value==='up')c.path='r';
+ else if(value==='next'){
+  if(c.path.endsWith('n'))c.path=c.path.slice(0,-1)+'d';
+  else if(c.path.endsWith('b'))c.path=c.path.slice(0,-1)+'e';
+  else c.path='r';
+ }
+ else if(value==='frac'){const j=arr.length;arr.push({t:'f',n:[],d:[]});c.path=(c.path==='r'?'r/':c.path+'/')+j+'n'}
+ else if(value==='pow'){const j=arr.length;arr.push({t:'p',b:[],e:[]});c.path=(c.path==='r'?'r/':c.path+'/')+j+'b'}
+ else if(value==='sqrt'){const j=arr.length;arr.push({t:'s',v:[]});c.path=(c.path==='r'?'r/':c.path+'/')+j+'v'}
+ else if(value.length===1||['≦','≧'].includes(value)){if(arr.length<100)arr.push({t:'c',v:value})}
+ connectPadSave(id,n);
+}
+function connectGraphHtml(id,n){
+ const key=connectSubKey(id,n),desc=connectIsGraphDesc(id);
+ const written=esc(connectSub.written[key]||''),c=connectSub.graphReview[key]||{};
+ return `<section class="graphPractice"><h3>📈 ${desc?'グラフの関係を考えよう':'自分でグラフを描こう'}</h3><p>${desc?'この問題はグラフの位置関係を説明する問題です。数式入力は不要です。':'座標軸に指やApple Pencilで曲線を描こう。式を入力する必要はありません。'} うまく描けなくても、解答の図と見比べて練習できます。</p>${desc?'':`<canvas class="graphCanvas" data-connect-graph="1" aria-label="座標軸にグラフを描く練習用の領域"></canvas><div class="graphPracticeControls"><button class="btn" data-act="connectGraphUndo">↩ 1画戻す</button><button class="btn" data-act="connectGraphClear">🗑️ 描き直す</button></div>`}<label for="connect-graph-description"><b>${desc?'✏️ どのような位置関係にある？':'✏️ 通る点・値域・位置関係などをメモ（任意）'}</b></label><textarea id="connect-graph-description" class="graphDescription" data-connect-written="1" placeholder="例：基本のグラフと比べて、どのように移る？">${written}</textarea><div class="connectSelfInstructions">🔍 自動採点ではありません。下の「解答・解説を見る」で模範グラフや考え方を確認した後、チェックを付けよう。</div><div class="graphCheck"><label><input type="checkbox" data-connect-graphcheck="axes" ${c.axes?'checked':''}>基本となる点・グラフの位置を確かめた</label><label><input type="checkbox" data-connect-graphcheck="shape" ${c.shape?'checked':''}>増加・減少や曲線の形を見比べた</label><label><input type="checkbox" data-connect-graphcheck="conditions" ${c.conditions?'checked':''}>定義域・値域など問題の条件を確認した</label></div></section>`;
+}
+let connectGraphPointer=null;
+function connectGraphKey(){const id=mode==='connect-example'?'CONNECT'+connectExampleCurrent:connectCurrent;return connectSubKey(id,connectIndex(id))}
+function connectGraphPaint(){
+ const c=root.querySelector('canvas[data-connect-graph]');if(!c)return;
+ const box=c.getBoundingClientRect(),w=box.width,h=box.height,dpr=Math.min(3,window.devicePixelRatio||1);
+ if(w<2||h<2)return;
+ if(c.width!==Math.round(w*dpr)||c.height!==Math.round(h*dpr)){c.width=Math.round(w*dpr);c.height=Math.round(h*dpr)}
+ const g=c.getContext('2d');g.setTransform(dpr,0,0,dpr,0,0);g.fillStyle='#fff';g.fillRect(0,0,w,h);
+ const ox=w*.49,oy=h*.54,dx=Math.max(25,w/12),dy=Math.max(24,h/9);
+ g.lineWidth=1;g.strokeStyle='#e8eef5';for(let x=ox%dx;x<w;x+=dx){g.beginPath();g.moveTo(x,0);g.lineTo(x,h);g.stroke()}for(let y=oy%dy;y<h;y+=dy){g.beginPath();g.moveTo(0,y);g.lineTo(w,y);g.stroke()}
+ g.strokeStyle='#526f83';g.lineWidth=2;g.beginPath();g.moveTo(0,oy);g.lineTo(w,oy);g.moveTo(ox,0);g.lineTo(ox,h);g.stroke();g.fillStyle='#355b77';g.font='15px sans-serif';g.fillText('x',w-18,oy-10);g.fillText('y',ox+8,17);g.fillText('O',ox+5,oy+17);
+ const arr=connectSub.graphInk[connectGraphKey()]||[];g.strokeStyle='#0b84c6';g.lineCap='round';g.lineJoin='round';g.lineWidth=3.5;
+ for(const points of arr){if(!points?.length)continue;g.beginPath();g.moveTo(points[0][0]*w,points[0][1]*h);for(const p of points.slice(1))g.lineTo(p[0]*w,p[1]*h);if(points.length===1)g.lineTo(points[0][0]*w+.1,points[0][1]*h+.1);g.stroke()}
+}
+root.addEventListener('pointerdown',e=>{const c=e.target.closest('canvas[data-connect-graph]');if(!c)return;e.preventDefault();let r=c.getBoundingClientRect(),key=connectGraphKey();connectGraphPointer={id:e.pointerId,key};(connectSub.graphInk[key] ||= []).push([[Math.min(1,Math.max(0,(e.clientX-r.left)/r.width)),Math.min(1,Math.max(0,(e.clientY-r.top)/r.height))]]);try{c.setPointerCapture(e.pointerId)}catch(x){}connectGraphPaint()},{passive:false});
+root.addEventListener('pointermove',e=>{if(!connectGraphPointer||e.pointerId!==connectGraphPointer.id)return;const c=root.querySelector('canvas[data-connect-graph]');if(!c)return;e.preventDefault();let r=c.getBoundingClientRect(),arr=connectSub.graphInk[connectGraphPointer.key],pts=arr?.[arr.length-1];if(!pts)return;for(const ev of(e.getCoalescedEvents?.()||[e]))pts.push([Math.min(1,Math.max(0,(ev.clientX-r.left)/r.width)),Math.min(1,Math.max(0,(ev.clientY-r.top)/r.height))]);connectGraphPaint()},{passive:false});
+for(const n of ['pointerup','pointercancel','lostpointercapture'])root.addEventListener(n,e=>{if(connectGraphPointer?.id===e.pointerId){connectGraphPointer=null;saveConnectSub();connectGraphPaint()}});
+window.addEventListener('resize',connectGraphPaint);
+
 function connectCurrentPart(id){
  const p=CONNECT_TEX_MAP[String(id)];if(!p)return '';
  const n=connectIndex(id),key=connectSubKey(id,n),N=connectNumParts(id),q=p.parts?.[n]||null;
  const result=connectSub.feedback[key]||null,st=connectRecordState(id,n),meta=CONNECT_GRADING[String(id)]?.[n];
- const total=connectPartCount(id);
- const historyText=st.tries>0?`自動判定 ${st.tries}回（正解 ${st.correct}回・不正解 ${st.wrong}回）${st.recovered?' ・ ヒントや誤答から自力正解！':''}`:'まだ採点していません';
+ const total=connectPartCount(id),isGraph=connectIsGraphDraw(id)||connectIsGraphDesc(id),automatable=!isGraph&&meta&&meta.mode!=='manual';
+ const hist=st.tries>0?`正解 <b>${st.correct}回</b> ・ 不正解 <b>${st.wrong}回</b>${st.recovered?' ・ ×から○に成長！':''}`:'まだ採点していません';
+ const inputUi=isGraph?connectGraphHtml(id,n):automatable?`${connectPadHtml(id,n)}<div class="connectChecker"><button class="btn primary" data-act="connectPartCheck">✅ 答えをチェック</button></div>`:
+ `<div class="connectSelfInstructions">✍️ この問題は、複数の答え・証明・複雑な式などを含みます。答えを特殊な記号で入力する必要はありません。手書き計算欄と解説を使って確認しましょう。</div><textarea class="graphDescription" data-connect-written="1" aria-label="考え方を記録" placeholder="考え方や答えを言葉でメモ（任意）">${esc(connectSub.written[key]||'')}</textarea>`;
  return `<section class="connectQuestFrame" id="connectQuest" aria-label="CONNECT 小問別チャレンジ"><div class="connectQuestHead"><strong>📝 小問チャレンジ</strong><span class="connectStat">${n+1} / ${N} 小問 ・ ✅ ${total.done}</span></div>
  <div class="connectCurrentQuestion">${p.parts?.length?`<span style="font-size:18px;font-weight:850">${p.starred?.includes(n+1)?'★ ':''}(${n+1})</span><div class="connectTexFormula">${M(q)}</div>`:`<div class="connectPartSummary">この問題は1題で構成されています。上の問題文を読んで解答しましょう。</div>`}</div>
- <p class="connectPartSummary">🔢 他の小問を選択（○・◐・×の学習履歴つき）</p><div class="connectPills">${Array.from({length:N},(_,j)=>connectPickButton(id,j,j===n)).join('')}</div>
- <label class="connectInputLabel" for="connect-answer-box">✏️ 自分の答えを入力</label>
- <input id="connect-answer-box" class="connectAnswerInput" data-connect-answer="1" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="例：1/9、a^2*b^2、x=3" value="${esc(connectSub.values[key]||'')}">
- <p class="connectMiniKey">${meta?.mode==='manual'?'グラフ・証明や複雑な式は自動採点せず、解説で自己確認できます。':'分数は1/3、指数はa^2などと入力できます。'} 自動判定は補助機能です。</p>
- <div class="connectChecker"><button class="btn primary" data-act="connectPartCheck">🔎 答えをチェック</button><button class="btn" data-act="connectPartClearInput">入力を消す</button></div>
+ <p class="connectPartSummary">📖 小問をタップすると直接移動できます（○・◐・×履歴つき）</p><div class="connectPills">${Array.from({length:N},(_,j)=>connectPickButton(id,j,j===n)).join('')}</div>
+ ${inputUi}
  ${result?`<div class="connectFeedback ${result.state==='correct'?'correct':result.state==='wrong'?'wrong':''}" role="status">${esc(result.message)}</div>`:''}
- <div class="connectFeedbackHistory" aria-live="polite"><b>履歴：${st.symbol} ${st.label}</b> ｜ ${historyText}</div>
+ <div class="connectFeedbackHistory" aria-live="polite"><b>履歴：${st.symbol} ${st.label}</b> ｜ ${hist}</div>
  ${connectMasteryPanel(id,n,st)}
  ${connectHintPanel(id,n)}
  ${connectPartAnswerPanel(id,n)}
@@ -1557,6 +1787,7 @@ function connectCurrentPart(id){
  <div class="connectSubNav"><button class="btn" data-act="connectPartPrev" ${n===0?'disabled':''}>← 前の小問</button><button class="btn primary" data-act="connectPartNext" ${n===N-1?'disabled':''}>次の小問 →</button></div>
  <div class="actions"><button class="btn" data-act="connect">📋 ○×つきの問題一覧へ</button></div></section>`;
 }
+
 function connectNewDetailView(){const item=CONNECT_ITEMS.find(x=>x.id===connectCurrent)||CONNECT_ITEMS[0],mark=connectMarkState(item.id);let c=connectPartCount(item.id);
 return `${head()}<div class="connectContent"><div class="eyebrow">CONNECT / 原題に沿った小問別学習</div><h1>📗 CONNECT ${item.id}番</h1>
 <div class="connectMeta"><span>📖 ${esc(item.section)}</span><span>📘 ${item.rank}問題</span><span>問題集 p.${item.page}</span><span>✅ ${c.done}/${c.total} 小問</span></div>
@@ -1578,14 +1809,14 @@ function connectExportResults(){
  }
  const csv='\uFEFF'+rows.map(x=>x.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\r\n');
  const blob=new Blob([csv],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob);
- const a=document.createElement('a');a.href=url;a.download='connect_v17_mastery_history.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),8000);
+ const a=document.createElement('a');a.href=url;a.download='connect_v18_mastery_history.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),8000);
 }
 function connectDetailView(){return connectNewDetailView();}
 function connectDetailViewOld(){const item=CONNECT_ITEMS.find(x=>x.id===connectCurrent)||CONNECT_ITEMS[0],mark=connectMarkState(item.id);return `${head()}<div class="connectContent"><div class="eyebrow">CONNECT ORIGINAL / 原題モード</div><h1>📗 CONNECT ${item.id}番</h1><div class="connectMeta"><span>📖 ${esc(item.section)}</span><span>📘 ${item.rank}問題</span><span>問題集 p.${item.page}</span><span>${mark.value==='done'?'✅ 解けた':mark.value==='retry'?'🔁 復習したい':'未記録'}</span></div><p class="sub" style="margin:10px 0">TeXから数式表示しています。大きな文字で問題を確認できます。本文は原本をもとに書き起こしたものです。</p>${connectQuestionText(item.id)}<div class="actions"><button class="btn" data-act="connect">📚 問題一覧へ</button></div><details class="scratchbox" open><summary>✍️ 計算メモ（連続して手書きできます）</summary><div class="scratch-inner"><canvas data-scratch="1" aria-label="CONNECTの手書きメモ・計算用"></canvas><div class="scratchactions"><button class="btn" data-act="undoScratch">↩ 1画戻す</button><button class="btn" data-act="clearScratch">🗑️ 全部消す</button></div></div></details><label style="display:block;font-size:17px;font-weight:900;margin:18px 0 8px">📝 自分の答え・気づきの記録</label><textarea class="connectNote" data-connect-note="1" placeholder="例：（1）〇〇、（2）〇〇／どの式変形で迷った？">${esc(connectState.notes[item.id]||'')}</textarea>${connectAnswerPanel(item.id)}<p class="sub" style="margin-top:6px">書き込み・自己評価・手書きメモはこの端末に保存されます。正答率の自動集計には含みません。</p><div class="connectActionRow"><button class="btn done" data-act="connectMark" data-v="done">✅ 解けた（自己評価）</button><button class="btn retry" data-act="connectMark" data-v="retry">🔁 復習したい</button></div><div class="actions"><button class="btn" data-act="connectMark" data-v="clear">記録を取り消す</button><span class="sub">${mark.updated?'最終記録：'+new Date(mark.updated).toLocaleDateString('ja-JP'):'未記録'}</span></div><div class="connectActionRow"><button class="btn" data-act="connectPrev" ${item.id===313?'disabled':''}>← ${item.id-1}番</button><button class="btn primary" data-act="connectNext" ${item.id===377?'disabled':''}>${item.id+1}番 →</button></div></div>`}
 function connectExampleView(){return connectNewExampleView();}
 function connectExampleViewOld(){const x=CONNECT_EXAMPLES.find(t=>t.num===connectExampleCurrent)||CONNECT_EXAMPLES[0];return `${head()}<div class="connectContent"><div class="eyebrow">CONNECT STUDY EXAMPLE / 発展例題</div><h1>📘 CONNECT ${x.num}（解説例）</h1><div class="connectHelp">CONNECTの発展例題です。まず自分で考えてから、解答・解説を開いて確認しましょう。</div>${connectQuestionText('CONNECT'+x.num)}${connectAnswerPanel("CONNECT"+x.num)}<div class="actions"><button class="btn primary" data-act="connect">📗 CONNECTの問題一覧へ</button></div></div>`}
 
-function head(){return `<div class="top"><div class="brand">✦ <span>指数・対数</span> QUEST <small class="sub">v17 ・ 習得度チェック＋問題プレビュー</small></div><div class="right"><span class="gold sub">Lv.${lev()}　🪙${save.coins}</span><button class="btn" data-act="home">🏠 ホーム</button><button class="btn" data-act="connect">📗 CONNECT</button><details class="navDetails"><summary>☰ メニュー</summary><div class="navPanel"><button class="btn" data-act="progress">📊 学習記録</button><button class="btn" data-act="profile">🆔 学習ID</button><button class="btn" data-act="shop">🎒 ショップ</button><button class="btn" data-act="pets">🐾 相棒ペット</button><button class="btn" data-act="bestiary">📖 図鑑</button><button class="btn" data-act="soundSettings">🎧 音・演出</button><button class="btn" data-act="sound">${sound?'🔊 効果音ON':'🔇 効果音OFF'}</button><button class="btn" data-act="bgm">${bgmOn?'♫ BGM ON':'♫ BGM OFF'}</button></div></details></div></div>`}
+function head(){return `<div class="top"><div class="brand">✦ <span>指数・対数</span> QUEST <small class="sub">v18 ・ 数式パッド＋グラフ練習</small></div><div class="right"><span class="gold sub">Lv.${lev()}　🪙${save.coins}</span><button class="btn" data-act="home">🏠 ホーム</button><button class="btn" data-act="connect">📗 CONNECT</button><details class="navDetails"><summary>☰ メニュー</summary><div class="navPanel"><button class="btn" data-act="progress">📊 学習記録</button><button class="btn" data-act="profile">🆔 学習ID</button><button class="btn" data-act="shop">🎒 ショップ</button><button class="btn" data-act="pets">🐾 相棒ペット</button><button class="btn" data-act="bestiary">📖 図鑑</button><button class="btn" data-act="soundSettings">🎧 音・演出</button><button class="btn" data-act="sound">${sound?'🔊 効果音ON':'🔇 効果音OFF'}</button><button class="btn" data-act="bgm">${bgmOn?'♫ BGM ON':'♫ BGM OFF'}</button></div></details></div></div>`}
 const defaultGoals=[10,10,10,10,10,15,10,10,10,10,15,15,10,20];
 function goalFor(i){return plannedDeck(i,save.lengthMode).length}
 function modeSelector(){const n=goalFor(stage);return `<div class="modebar"><button class="modebtn ${save.lengthMode==='mini'?'active':''}" data-act="length" data-length="mini">🗺️ ミニ冒険<small>続きから5問ずつ（おすすめ）</small></button><button class="modebtn ${save.lengthMode==='quick'?'active':''}" data-act="length" data-length="quick">🌱 お試し<small>最初の5小問</small></button><button class="modebtn ${save.lengthMode==='standard'?'active':''}" data-act="length" data-length="standard">📚 まとめて冒険<small>元問題＋類題2問ずつ</small></button><button class="modebtn ${save.lengthMode==='long'?'active':''}" data-act="length" data-length="long">🏅 じっくり<small>元問題＋類題4問ずつ</small></button></div>`}
@@ -1602,7 +1833,7 @@ function graph(){let exp=stage===3,lo=exp?-3:0,hi=exp?3:8,X=x=>42+(x-lo)/(hi-lo)
  f=x=>exp?Math.pow(gbase,x):Math.log(x)/Math.log(gbase),xx=exp?[-2,-1,0,1,2][gx]:[.25,.5,1,2,4][gx],yy=f(xx),arr=[];
  for(let i=0;i<=240;i++){let x=lo+(hi-lo)*i/240,y=f(x);if(Number.isFinite(y)&&y>=-3&&y<=5)arr.push(`${X(x).toFixed(1)},${Y(y).toFixed(1)}`)}
  return `<div class="graph graphmini"><div class="eyebrow">🔬 自分で動かすグラフ</div><div class="gcontrols"><button class="btn" data-act="base" data-v="3">${gbase===3?'● ':''}底 3</button><button class="btn" data-act="base" data-v="0.3333333333333333">${gbase===1/3?'● ':''}底 ${M(T`\frac13`)}</button></div><svg viewBox="0 0 470 245" role="img" aria-label="指数関数と対数関数の座標グラフ"><rect x="22" y="9" width="431" height="225" fill="#102739" rx="8"/><path d="M22 ${Y(0)}H453 M${X(0)} 10V234" stroke="#9dbbc9" fill="none"/><polyline points="${arr.join(' ')}" stroke="#87eacf" stroke-width="3.5" fill="none"/><circle cx="${X(xx)}" cy="${Y(yy)}" r="6" fill="#ffe4a2"/><text x="345" y="35" fill="#ccf7ed" font-size="15">${exp?'y = aˣ':'y = logₐx'}</text></svg><input type="range" aria-label="グラフ上の点の位置" data-act="point" min="0" max="4" value="${gx}" step="1"><div class="sub" style="text-align:center">${M(T`x=${xx===.5?T`\frac12`:xx}`)}　${M(T`y=${Math.abs(yy-Math.round(yy))<.00001?Math.round(yy):yy===.5?T`\frac12`:yy===.25?T`\frac14`:Number(yy.toFixed(3))}`)}</div><p class="sub" style="text-align:center">底が1より大きいと増加、1より小さいと減少。点の位置を変えて確かめましょう。</p></div>`}
-function lesson(){let s=L[stage];return `${head()}<div class="learnHead"><span class="em">${s[0]}</span><div><div class="eyebrow">LESSON ${stage+1} ／ ${s[2]}</div><h2>${s[1]}</h2><p class="sub">相手：${s[4]}</p></div></div><div class="card screenfade">${storyCard(stage)}<div class="eyebrow">① まずは教科書で学ぶ</div><p style="margin:10px 0;line-height:2.2">${R(s[5])}</p><div class="rule"><strong>📖 公式・教科書の例</strong><div class="mathline">${R(s[6])}</div></div><div class="worked">✅ おさえたいポイント：${esc(hints2[Math.min(stage,12)])}</div>${stage===3||stage===9?graph():''}<div class="learnbar"><span class="learnpill">🔢 4択＋自力入力＋途中式の穴埋め</span><span class="learnpill">💡 3段階ヒント</span><span class="learnpill">🧠 間違いの原因分析</span><span class="learnpill">🔁 自動復習</span></div><div class="rule"><strong>🔢 問題数を選ぼう</strong><p class="sub">おすすめの「ミニ冒険」は教科書の小問と類題を順番に5問ずつ進めます。「お試し」は最初の5問だけを繰り返します。まとめて冒険・じっくりは一度に多数の問題へ挑戦します。</p>${modeSelector()}</div><div class="actions"><button class="btn" data-act="home">マップへ</button><button class="btn primary" data-act="start" ${availableQuestions(stage).length?'':'disabled'}>✨ ${goalFor(stage)}問の冒険に出発</button>${save.stars[stage]?`<button class="btn" data-act="startMastery">🏅 習得確認5問（${stageMastered(stage)?'合格済み':'未合格'}）</button>`:''}</div><p class="sub">${availableQuestions(stage).length}問の候補があります。ミニ冒険は5問ずつ、前回の続きの問題へ進みます。途中で保存・再開できます。教材にない別形式の問題は追加していません。</p></div>`}
+function lesson(){let s=L[stage];return `${head()}<div class="learnHead"><span class="em">${s[0]}</span><div><div class="eyebrow">LESSON ${stage+1} ／ ${s[2]}</div><h2>${s[1]}</h2><p class="sub">相手：${s[4]}</p></div></div><div class="card screenfade">${storyCard(stage)}<div class="eyebrow">① まずは教科書で学ぶ</div><p style="margin:10px 0;line-height:2.2">${R(s[5])}</p><div class="rule"><strong>📖 公式・教科書の例</strong><div class="mathline">${R(s[6])}</div></div><div class="worked">✅ おさえたいポイント：${esc(hints2[Math.min(stage,12)])}</div>${stage===3||stage===9?graph():''}<div class="learnbar"><span class="learnpill">🔢 四択・入力・数式パズルを選択</span><span class="learnpill">💡 3段階ヒント</span><span class="learnpill">🧠 間違いの原因分析</span><span class="learnpill">🔁 自動復習</span></div><div class="rule"><strong>🔢 問題数を選ぼう</strong><p class="sub">おすすめの「ミニ冒険」は教科書の小問と類題を順番に5問ずつ進めます。「お試し」は最初の5問だけを繰り返します。まとめて冒険・じっくりは一度に多数の問題へ挑戦します。</p>${modeSelector()}</div><div class="actions"><button class="btn" data-act="home">マップへ</button><button class="btn primary" data-act="start" ${availableQuestions(stage).length?'':'disabled'}>✨ ${goalFor(stage)}問の冒険に出発</button>${save.stars[stage]?`<button class="btn" data-act="startMastery">🏅 習得確認5問（${stageMastered(stage)?'合格済み':'未合格'}）</button>`:''}</div><p class="sub">${availableQuestions(stage).length}問の候補があります。ミニ冒険は5問ずつ、前回の続きの問題へ進みます。途中で保存・再開できます。教材にない別形式の問題は追加していません。</p></div>`}
 function plannedDeck(i,length=save.lengthMode){
  const list=availableQuestions(i);
  if(i===13){
@@ -1804,7 +2035,14 @@ root.addEventListener('toggle',e=>{if(e.target.matches('.scratchbox')){scratchVi
 
 function soundSettings(){return `${head()}<div class="card"><div class="eyebrow">AUDIO / ACCESSIBILITY</div><h2>🎧 音と演出の設定</h2><p>効果音とBGMは初期設定でOFF。授業中は無音のまま使えます。各音はオリジナル制作の明るい「冒険」と「バトル」の2曲が画面に合わせて切り替わります。ネット接続は不要です。</p><div class="volume-card"><label>魔法・撃破などの効果音　<strong id="sfxV">${Math.round((save.sfxVolume??.65)*100)}%</strong><input type="range" min="0" max="100" value="${Math.round((save.sfxVolume??.65)*100)}" data-volume="sfxVolume"></label><button data-act="testSfx" class="btn">試聴する</button></div><div class="volume-card"><label>BGM音量　<strong id="bgmV">${Math.round((save.bgmVolume??.18)*100)}%</strong><input type="range" min="0" max="60" value="${Math.round((save.bgmVolume??.18)*100)}" data-volume="bgmVolume"></label></div><div class="volume-card"><b>動きの設定</b><div class="actions"><button class="btn ${save.motion==='full'?'primary':''}" data-act="motion" data-value="full">✨ 通常演出</button><button class="btn ${save.motion==='soft'?'primary':''}" data-act="motion" data-value="soft">🍀 控えめ</button></div><p class="sub">点滅が苦手な生徒は「控えめ」を選べます。制限時間はありません。</p></div><button data-act="home" class="btn primary">冒険へ戻る</button></div>`}
 function render(){root.innerHTML='<div class="screenfade">'+(mode==='home'?home():mode==='connect'?connectGroupView():mode==='connect-detail'?connectDetailView():mode==='connect-example'?connectExampleView():mode==='lesson'?lesson():mode==='fight'?fight():mode==='result'?result():mode==='progress'?progress():mode==='profile'?profileView():mode==='mastery'?mastery():mode==='mastery-result'?masteryResult():mode==='sound-settings'?soundSettings():mode==='pets'?petShop():mode==='bestiary'?bestiary():shop())+'</div>';if(scratchVisible)requestAnimationFrame(redrawScratch);if(bgmOn&&sound)requestAnimationFrame(startBgm)}
+const originalRenderV18=render;render=function(){originalRenderV18();requestAnimationFrame(connectGraphPaint)};
+
 root.addEventListener('click',e=>{let b=e.target.closest('[data-act]');if(!b)return;let a=b.dataset.act,i=Number(b.dataset.i);
+ if(a==='connectPadKey'){connectPadClick(b.dataset.key);return}
+ else if(a==='connectPadFocus'){const id=mode==='connect-example'?'CONNECT'+connectExampleCurrent:connectCurrent,n=connectIndex(id);connectPadState(id,n).path=b.dataset.path||'r';connectPadSave(id,n);return}
+ else if(a==='connectGraphUndo'){let k=connectGraphKey();(connectSub.graphInk[k]||[]).pop();saveConnectSub();connectGraphPaint();return}
+ else if(a==='connectGraphClear'){let k=connectGraphKey();connectSub.graphInk[k]=[];saveConnectSub();connectGraphPaint();return}
+
  if(a==='connect'){mode='connect';scratchVisible=false;render();try{window.scrollTo(0,0)}catch(e){}}
  else if(a==='connectOpen')connectOpen(Number(b.dataset.n))
  else if(a==='connectJump')connectJump(b.dataset.id,Number(b.dataset.part))
@@ -1877,8 +2115,375 @@ root.addEventListener('click',e=>{let b=e.target.closest('[data-act]');if(!b)ret
  else if(a==='bgm'){bgmOn=!bgmOn;if(bgmOn){sound=true;startBgm();notes('learn')}else stopBgm();render()}
  else if(a==='export')exportCSV()
 });
-root.addEventListener('input',e=>{if(e.target.dataset.connectAnswer){const id=mode==='connect-example'?'CONNECT'+connectExampleCurrent:connectCurrent;const key=connectSubKey(id,connectIndex(id));connectSub.values[key]=e.target.value.slice(0,160);delete connectSub.feedback[key];saveConnectSub();return}if(e.target.dataset.connectNote){connectState.notes[connectCurrent]=e.target.value.slice(0,3000);saveConnect();return;}if(e.target.dataset.volume){let n=e.target.dataset.volume;save[n]=Number(e.target.value)/100;persist();if(n==='bgmVolume'&&bgmHandle)bgmHandle.volume=Math.min(.6,save.bgmVolume);let label=root.querySelector(n==='sfxVolume'?'#sfxV':'#bgmV');if(label)label.textContent=Math.round(save[n]*100)+'%';return}if(e.target.dataset.act==='point'){gx=Number(e.target.value);render()}else if(e.target.dataset.entry){setInputValue(e.target.dataset.entry,e.target.value)}});
+root.addEventListener('keydown',e=>{const el=e.target.closest('.mathField[role=button]');if(el&&(e.key==='Enter'||e.key===' ')){e.preventDefault();el.click()}});
+root.addEventListener('input',e=>{if(e.target.dataset.connectWritten){const k=connectGraphKey();connectSub.written[k]=e.target.value.slice(0,2000);saveConnectSub();return}if(e.target.dataset.connectAnswer){const id=mode==='connect-example'?'CONNECT'+connectExampleCurrent:connectCurrent;const key=connectSubKey(id,connectIndex(id));connectSub.values[key]=e.target.value.slice(0,160);delete connectSub.feedback[key];saveConnectSub();return}if(e.target.dataset.connectNote){connectState.notes[connectCurrent]=e.target.value.slice(0,3000);saveConnect();return;}if(e.target.dataset.volume){let n=e.target.dataset.volume;save[n]=Number(e.target.value)/100;persist();if(n==='bgmVolume'&&bgmHandle)bgmHandle.volume=Math.min(.6,save.bgmVolume);let label=root.querySelector(n==='sfxVolume'?'#sfxV':'#bgmV');if(label)label.textContent=Math.round(save[n]*100)+'%';return}if(e.target.dataset.act==='point'){gx=Number(e.target.value);render()}else if(e.target.dataset.entry){setInputValue(e.target.dataset.entry,e.target.value)}});
 
+root.addEventListener('change',e=>{if(!e.target.dataset.connectGraphcheck)return;const k=connectGraphKey();(connectSub.graphReview[k] ||= {})[e.target.dataset.connectGraphcheck]=!!e.target.checked;saveConnectSub()});
 window.addEventListener('online',scheduleSend);host.classList.toggle('soft-motion',save.motion==='soft');render();scheduleSend();
+/* v19: CONNECT learning enhancements. Existing v18 data and saved progress stay in place. */
+const V19_VERSION='v19・学習パズルと復習サポート';
+if(!connectSub.v19Puzzles||typeof connectSub.v19Puzzles!=='object')connectSub.v19Puzzles={};
+if(!connectSub.v19GraphMarks||typeof connectSub.v19GraphMarks!=='object')connectSub.v19GraphMarks={};
+if(!connectSub.v19GraphOptions||typeof connectSub.v19GraphOptions!=='object')connectSub.v19GraphOptions={};
+let v19GraphTool='line';
+function v19Label(id,n){return (String(id).startsWith('CONNECT')?'CONNECT '+String(id).slice(7):String(id)+'番')+' ('+(n+1)+')';}
+const V19_LESSON_LINK={
+ 0:'指数法則',1:'累乗根',2:'有理数指数',3:'指数関数のグラフ',4:'指数関数の大小',5:'指数方程式・不等式',6:'対数の定義',7:'対数の性質',8:'底の変換公式',9:'対数関数のグラフ',10:'対数方程式・不等式',11:'対数関数の応用',12:'常用対数',13:'常用対数の応用'
+};
+function v19Stage(id){
+ let n=Number(String(id).replace('CONNECT',''));
+ if(String(id).startsWith('CONNECT')) return ({31:2,32:11,33:11,34:13,35:13})[n]??0;
+ if(n<=315)return 0;if(n<=323)return 1;if(n<=329)return 2;
+ if(n<=332)return 3;if(n<=336)return 4;if(n<=339)return 5;
+ if(n<=341)return 6;if(n===342)return 7;if(n<=350)return 8;
+ if(n<=356)return 9;if(n<=359)return 10;if(n<=363)return 11;
+ if(n<=370)return 12;return 13;
+}
+function v19LearningLink(id){const st=v19Stage(id);return `<div class="v19panel" aria-label="教科書で復習する"><h3>📖 CONNECTで止まったら教科書へ</h3><p>この問題に関連する<b>第${st+1}ステージ「${esc(V19_LESSON_LINK[st])}」</b>を復習できます。教科書の原題と完全に一対一対応するという意味ではなく、単元の戻り先です。</p><button type="button" class="btn v19lessonButton" data-act="v19Lesson" data-stage="${st}">📘 関連する教科書ステージを開く</button></div>`;}
+const V19_PUZZLES={
+ '313:2':{kind:'fraction',slots:['分子','分母'],answer:['1','9'],cards:['9','1','3','2'],name:'負の指数を分数に'},
+ '313:3':{kind:'fraction',slots:['分子','分母'],answer:['1','10'],cards:['10','1','100','2'],name:'逆数の形にする'},
+ '313:4':{kind:'fraction',slots:['符号','分子','分母'],answer:['−','1','216'],cards:['1','＋','36','−','216','6'],name:'符号と分数を組み立てる'},
+ '314:2':{kind:'power',slots:['底','指数'],answer:['a','8'],cards:['8','a','−8','4','b'],name:'累乗の形で答える'},
+ '314:3':{kind:'product',slots:['左の因子','右の因子'],answer:['a²','b²'],cards:['b²','a⁶','a²','b⁻²'],name:'積の形で答える'},
+ '314:4':{kind:'power',slots:['底','指数'],answer:['a','−3'],cards:['a','b','3','−3','−9'],name:'商の指数法則を使う'},
+ '341:1':{kind:'single',slots:['対数の値'],answer:['3'],cards:['2','3','9','27'],name:'対数は何乗かを表す'}
+};
+const V19_STEPS={
+ '313:2':['3^{-2}','\\frac{1}{3^2}','\\frac{1}{9}'],
+ '313:3':['10^{-1}','\\frac{1}{10^1}','\\frac{1}{10}'],
+ '313:4':['(-6)^{-3}','\\frac{1}{(-6)^3}','-\\frac{1}{216}'],
+ '314:2':['(a^{-4})^{-2}','a^{(-4)\\times(-2)}','a^8'],
+ '314:3':['a^8(a^{-3}b)^2','a^8\\cdot a^{-6}b^2','a^{8-6}b^2','a^2b^2'],
+ '314:4':['a^{-6}\\div a^{-3}','a^{-6-(-3)}','a^{-3}'],
+ '341:1':['\\log_3 27\\text{ は }3\\text{ の何乗かを表す}','3^3=27','\\log_3 27=3']
+};
+function v19PuzzleState(key){const p=connectSub.v19Puzzles[key];if(p&&typeof p==='object')return p;return (connectSub.v19Puzzles[key]={slots:[],order:[],wins:0,comment:''});}
+function v19TileMath(v){return ({'a²':'a^2','b²':'b^2','a⁶':'a^6','b⁻²':'b^{-2}','−3':'-3','−8':'-8','−9':'-9','−':'-','＋':'+'})[v]||(/^[ab]$/.test(v)?v:v);}
+function v19PuzzleUI(id,n){const key=connectSubKey(id,n),spec=V19_PUZZLES[key],stps=V19_STEPS[key];if(!spec&&!stps)return '';
+ const st=v19PuzzleState(key);if(!Array.isArray(st.slots))st.slots=[];if(!Array.isArray(st.order))st.order=[];
+ let puzzle='';if(spec){const filled=spec.slots.map((x,i)=>st.slots[i]||'—');
+ const visual=spec.kind==='fraction'?`<div class="v19flex" style="justify-content:center"><span style="font-size:24px;font-weight:850">${filled.length===3?filled[0]:''}</span><div style="min-width:90px;max-width:160px;text-align:center;font-size:22px;font-weight:850"><div>${filled.length===3?filled[1]:filled[0]}</div><hr style="border:0;border-top:3px solid #164767;margin:4px 0"><div>${filled.length===3?filled[2]:filled[1]}</div></div></div>`:spec.kind==='power'?`<div style="font-size:24px;font-weight:900;text-align:center;margin:10px">${filled[0]}<sup>${filled[1]}</sup></div>`:spec.kind==='product'?`<div style="font-size:21px;font-weight:900;text-align:center;margin:10px">${filled.join(' × ')}</div>`:'';
+ puzzle=`<div class="v19challenge"><h3>🧩 答えを組み立てよう</h3><p>${esc(spec.name)}。下のカードを順番にタップし、${spec.slots.length}つの枠を埋めよう。</p><div class="v19flex">${spec.slots.map((name,i)=>`<div class="v19slot"><small>${esc(name)}</small><strong>${st.slots[i]||'□'}</strong></div>`).join('')}</div>${visual}<div class="v19flex">${spec.cards.map((card,i)=>`<button type="button" class="v19choice" data-act="v19PuzzleTile" data-key="${esc(key)}" data-i="${i}" ${st.slots.length>=spec.slots.length?'disabled':''}>${M(v19TileMath(card))}</button>`).join('')}</div><div class="v19flex"><button class="btn" data-act="v19PuzzleUndo" data-key="${esc(key)}">↩ 1つ戻す</button><button class="btn primary" data-act="v19PuzzleCheck" data-key="${esc(key)}" ${st.slots.length!==spec.slots.length?'disabled':''}>✅ 組み立てを確認</button></div></div>`;}
+ let steps='';if(stps){const ord=[...stps.keys()];if(stps.length===3){ord.splice(0,ord.length,2,0,1);}else {ord.splice(0,ord.length,2,0,3,1);}
+ const chosen=st.order||[];
+ steps=`<div class="v19challenge"><h3>🔀 途中式を正しい順番に</h3><p>原題を解くときの式の流れです。カードを順にタップして並べよう。<b>この練習だけで原題を自動正解扱いにはしません。</b></p><div class="v19steps">${chosen.map((ix,j)=>`<div class="v19step"><span class="v19stepindex">${j+1}</span>${M(stps[ix])}</div>`).join('')||'<p class="v19muted">まだ選んでいません。下のカードから順にタップしてください。</p>'}</div><p class="v19muted">並べるカード</p><div class="v19steps">${ord.filter(i=>!chosen.includes(i)).map(i=>`<button class="v19step" data-act="v19StepTile" data-key="${esc(key)}" data-i="${i}"><span class="v19stepindex">＋</span>${M(stps[i])}</button>`).join('')||'<span>すべて並べました。</span>'}</div><div class="v19flex"><button class="btn" data-act="v19StepUndo" data-key="${esc(key)}">↩ 1枚戻す</button><button class="btn primary" data-act="v19StepCheck" data-key="${esc(key)}" ${chosen.length!==stps.length?'disabled':''}>✅ 順番を確認</button></div></div>`;}
+ return `<section class="v19panel" aria-label="式パズルと途中式"><h3>🎯 数式ミッション（任意）</h3><p>数式の入力が難しいときは、カードを並べて考えよう。通常の解答・採点とは別の補助練習です。</p>${puzzle}${steps}${st.comment?`<div class="v19result ${st.comment.startsWith('もう一度')?'v19warning':''}" role="status">${esc(st.comment)}</div>`:''}${st.wins?`<div class="v19tag">✨ パズル成功 ${st.wins}回</div>`:''}</section>`;
+}
+function v19DueStatus(id,n,now=Date.now()){
+ const key=connectSubKey(id,n),a=connectSub.attempts[key]||{};
+ if(!Array.isArray(a.history))return {due:false,retained:false};
+ const indep=a.history.filter(q=>q.result==='correct'&&q.hints===0&&Number.isFinite(Date.parse(q.at)));
+ if(!indep.length)return {due:false,retained:false};
+ const first=Date.parse(indep[0].at),last=Date.parse(indep[indep.length-1].at);
+ const retained=indep.length>=2&&(last-first)>=24*60*60*1000;
+ const delay=(retained?3:1)*24*60*60*1000;
+ return {due:now>=last+delay,retained,last,next:last+delay};
+}
+function v19DueList(){const items=[];for(const item of [...CONNECT_ITEMS,...CONNECT_EXAMPLES])for(let i=0;i<connectNumParts(item.id);i++){
+ if(v19DueStatus(item.id,i).due&&connectRecordState(item.id,i).code==='mastered')items.push({id:item.id,i});
+ }return items;}
+const v19OldConnectRecordState=connectRecordState;
+connectRecordState=function(id,n){const result=v19OldConnectRecordState(id,n),due=v19DueStatus(id,n);if(result.code==='mastered'&&due.retained){result.symbol='◎';result.label='別の日も自力正解';}
+ result.due=due.due&&result.code==='mastered';result.retained=due.retained;return result;};
+const v19OldConnectPickButton=connectPickButton;
+connectPickButton=function(id,n,active=false){const st=connectRecordState(id,n),a=connectSub.attempts[connectSubKey(id,n)]||{};return v19OldConnectPickButton(id,n,active).replace('</button>',`<span class="v19miniStat">${a.tries?'正解'+(a.correct||0)+'回・誤答'+(a.wrong||0)+'回':''}${st.due?'　⏰復習時期':''}</span></button>`);};
+const v19OldConnectGroupView=connectGroupView;
+function v19MissionParams(){try{const q=new URLSearchParams(location.search).get('quest');if(!q)return[];return q.split(',').slice(0,12).map(a=>{const m=/^(CONNECT(?:3[1-5])|3(?:1[3-9]|[2-6]\d|7[0-7]))\.(\d+)$/.exec(a);if(!m)return null;const id=m[1].startsWith('CONNECT')?m[1]:Number(m[1]),i=Number(m[2])-1;if(i<0||i>=connectNumParts(id))return null;return {id,i}}).filter(Boolean);}catch(e){return[];}}
+const v19MissionList=v19MissionParams();
+function v19MissionPanel(){if(!v19MissionList.length)return'';const done=v19MissionList.filter(t=>['mastered','assisted','correct','self'].includes(connectRecordState(t.id,t.i).code)).length;
+ return `<section class="v19mission"><h2>🎓 今日のクエスト</h2><p>先生が指定した${v19MissionList.length}小問です。自分のペースで挑戦しましょう。時間制限はありません。</p><div class="connectProgress"><div style="width:${Math.round(100*done/v19MissionList.length)}%"></div></div><p><strong>確認済み ${done} / ${v19MissionList.length}</strong></p><div class="v19missiongrid">${v19MissionList.map(t=>{const z=connectRecordState(t.id,t.i);return `<button class="v19missionbutton" data-act="v19MissionJump" data-id="${esc(String(t.id))}" data-part="${t.i}">${v19Label(t.id,t.i)} <b>${z.symbol}</b><small>${esc(z.label)}・${(connectSub.attempts[connectSubKey(t.id,t.i)]||{}).tries||0}回挑戦</small></button>`;}).join('')}</div><p class="v19muted">進み具合はこの端末に保存されます。先生への自動送信は行いません。</p></section>`;
+}
+connectGroupView=function(){const base=v19OldConnectGroupView();const due=v19DueList();const dueBox=`<section class="v19panel"><h3>⏰ 間隔を空けた習得確認</h3><p>ヒントなしで解けた問題は翌日以降に、さらに復習できます。定着を確認できた後は、約3日後に次の確認を表示します。急ぐ必要はありません。</p><b>復習する時期になった小問：${due.length}問</b><div class="v19dueList">${due.slice(0,12).map(t=>`<button data-act="v19MissionJump" data-id="${t.id}" data-part="${t.i}">⏰ ${v19Label(t.id,t.i)}</button>`).join('')}${!due.length?'<span class="v19muted">今は対象がありません。</span>':''}</div></section>`;
+ return base.replace('<div class="connectStats">',v19MissionPanel()+dueBox+'<div class="connectStats">').replaceAll('v18','v19');};
+const v19OldConnectCurrentPart=connectCurrentPart;
+connectCurrentPart=function(id){const html=v19OldConnectCurrentPart(id);const n=connectIndex(id),key=connectSubKey(id,n);const due=v19DueStatus(id,n);let msg='';
+ if(due.retained)msg='<div class="v19result">◎ 別の日にもヒントなしで正解！ 自力での定着を確認できました。</div>';
+ else if(due.due&&connectRecordState(id,n).code==='mastered')msg='<div class="v19result">⏰ そろそろ定着確認。もう一度ヒントなしで解いてみよう！</div>';
+ const plus=`${msg}${v19PuzzleUI(id,n)}${v19LearningLink(id)}`;
+ return html.replace('<div class="connectSubNav">',plus+'<div class="connectSubNav">');};
+const v19OldConnectAutoJudge=connectAutoJudge;
+function v19Misconception(id,n,input){const v=connectNormalize(input);if(String(id)==='313'){
+ if(n===1){if(['9','3^2'].includes(v))return'負の指数では逆数にする必要があります。3の2乗そのものではなく、1をその数で割る形を思い出そう。';if(['-1/9','-9'].includes(v))return'底の3は正なので、負の指数でも答えの符号は負にはなりません。';}
+ if(n===2&&v==='10')return'10の−1乗は、10そのものではありません。逆数を考えよう。';
+ if(n===3&&['1/216','216'].includes(v))return'底の−6を3回掛けると負の数です。逆数にした後も符号に気を付けよう。';
+ }if(String(id)==='314'){
+ if(n===0&&['a^7','a^(7)'].includes(v))return'同じ底の積は指数の足し算です。4＋(−3)を計算しよう。';
+ if(n===1&&['a^-8','a^(-8)'].includes(v))return'累乗の累乗では指数を掛けます。−4×(−2)の符号を確認しよう。';
+ }return null;}
+connectAutoJudge=function(id,n,input){const r=v19OldConnectAutoJudge(id,n,input);if(r.state==='wrong'){const p=v19Misconception(id,n,input);if(p)r.message='💡 '+p;}if(r.state==='correct'&&CONNECT_GRADING[String(id)]?.[n]?.mode==='symbolic'){
+ const ref=CONNECT_GRADING[String(id)][n].expected;const checkVars=[{a:.75,b:1.2,x:2.4},{a:4.7,b:2.1,x:3},{a:1.11,b:6.3,x:2},{a:8,b:0.72,x:1.5}];
+ try{if(!checkVars.every(vars=>connectSameNum(connectCalc(input,vars),connectCalc(ref,vars))))return {state:'manual',message:'同値と断定できませんでした。解説で確認してください。'};}catch(e){return {state:'manual',message:'この形式は安全に自動判定できません。解説で確認してください。'};}
+ }return r;};
+const V19_GRAPH_DATA={
+ '330:1':{points:[[-1,.25],[0,1],[1,4]],f:x=>Math.pow(4,x),domain:[-2.5,1.3]},
+ '330:2':{points:[[-1,4],[0,1],[1,.25]],f:x=>Math.pow(4,-x),domain:[-1.3,2.5]},
+ '330:3':{points:[[-1,-.25],[0,-1],[1,-4]],f:x=>-Math.pow(4,x),domain:[-2.5,1.3]},
+ '332:1':{points:[[0,1],[1,2],[2,4]],f:x=>Math.pow(2,x),domain:[0,2]},
+ '332:2':{points:[[-1,-2],[0,-1],[1,-.5]],f:x=>-Math.pow(.5,x),domain:[-1,1]},
+ '335:1':{points:[[-1,3.5],[0,4],[1,5]],f:x=>Math.pow(2,x)+3,domain:[-2,1.1]},
+ '335:2':{points:[[2,.5],[3,1],[4,2]],f:x=>Math.pow(2,x-3),domain:[-1,4.5]},
+ '335:3':{points:[[-3,1],[-2,2],[-1,4]],f:x=>8*Math.pow(2,x),domain:[-4,-.4]},
+ '335:4':{points:[[-2,1],[-1,.5],[0,.25]],f:x=>Math.pow(2,-x)/4,domain:[-4,4]},
+ '351:1':{points:[[.2,-1],[1,0],[5,1]],f:x=>Math.log(x)/Math.log(5),domain:[.05,5.5]},
+ '351:2':{points:[[-1,.2],[0,1],[1,5]],f:x=>Math.pow(5,x),domain:[-2,1.1]},
+ '351:3':{points:[[.2,1],[1,0],[5,-1]],f:x=>Math.log(x)/Math.log(.2),domain:[.05,5.5]},
+ '355:1':{points:[[.5,0],[1,1],[2,2]],f:x=>Math.log2(x)+1,domain:[.1,5.5]},
+ '355:2':{points:[[-.5,-1],[0,0],[1,1]],f:x=>Math.log2(x+1),domain:[-.9,5]},
+ '355:3':{points:[[1.5,1],[2,0],[3,-1]],f:x=>Math.log(x-1)/Math.log(.5),domain:[1.05,5.5]}
+};
+function v19GraphGuide(id,n){const key=connectSubKey(id,n),task=V19_GRAPH_DATA[key];if(!task)return `<div class="v19graphTools"><b>作図の3ステップ</b><p>① 定義域を確かめる ② 基本のグラフや移動を考える ③ 曲線を描いて解答と比較する</p></div>`;
+ const o=connectSub.v19GraphOptions[key]||{};
+ return `<section class="v19graphTools"><h3>🎨 3ステップでグラフを描こう</h3><p><b>① 点を打つ</b>：まず自分で通る点を考え、座標軸をタップ。<br><b>② 曲線を描く</b>：点を参考に曲線を描く。<br><b>③ 比較する</b>：最後に模範を重ねて見比べる。</p><div class="v19flex"><button data-act="v19GraphMode" data-mode="point" aria-pressed="${v19GraphTool==='point'}">● 点を打つ</button><button data-act="v19GraphMode" data-mode="line" aria-pressed="${v19GraphTool==='line'}">✏️ 線を描く</button><button data-act="v19GraphToggle" data-key="${key}" data-view="points" aria-pressed="${!!o.points}">👁 通る点のヒント</button><button data-act="v19GraphToggle" data-key="${key}" data-view="curve" aria-pressed="${!!o.curve}">📈 模範を重ねる</button></div><p class="v19muted">座標は1目盛りを1として描けます。点は青、手書き曲線も青、模範は橙色の破線です。模範の表示は自動採点ではありません。</p>${o.points?`<div class="v19fact"><b>通る点の例：</b> ${task.points.map(p=>`(${p[0]}, ${p[1]})`).join('　')}</div>`:''}<div class="v19flex"><button data-act="v19GraphUndoPoint" data-key="${key}">↩ 点を1つ戻す</button><button data-act="v19GraphClearPoint" data-key="${key}">🗑️ 点だけ消す</button></div></section>`;
+}
+const v19OldConnectGraphHtml=connectGraphHtml;
+connectGraphHtml=function(id,n){const html=v19OldConnectGraphHtml(id,n);return html.replace('<canvas class="graphCanvas"',v19GraphGuide(id,n)+'<canvas class="graphCanvas"');};
+const v19OldConnectGraphPaint=connectGraphPaint;
+connectGraphPaint=function(){v19OldConnectGraphPaint();const can=root.querySelector('canvas[data-connect-graph]');if(!can)return;const w=can.clientWidth,h=can.clientHeight;if(!w||!h)return;const id=mode==='connect-example'?'CONNECT'+connectExampleCurrent:connectCurrent,n=connectIndex(id),key=connectSubKey(id,n),cfg=V19_GRAPH_DATA[key],options=connectSub.v19GraphOptions[key]||{};
+ const g=can.getContext('2d'),dpr=Math.min(3,window.devicePixelRatio||1);g.setTransform(dpr,0,0,dpr,0,0);const ox=w*.49,oy=h*.54,dx=Math.max(25,w/12),dy=Math.max(24,h/9);
+ g.font='11px sans-serif';g.fillStyle='#4b6074';for(let j=-4;j<=5;j++){if(j!==0&&ox+j*dx>=10&&ox+j*dx<w-10){g.fillText(String(j),ox+j*dx-4,oy+15)}if(j!==0&&oy-j*dy>=12&&oy-j*dy<h-6){g.fillText(String(j),ox+7,oy-j*dy+3)}}
+ if(options.curve&&cfg){g.save();g.strokeStyle='#e18c31';g.lineWidth=3;g.setLineDash([9,6]);g.beginPath();let opened=false;for(let j=0;j<=400;j++){const x=cfg.domain[0]+(cfg.domain[1]-cfg.domain[0])*j/400,y=cfg.f(x),px=ox+x*dx,py=oy-y*dy;if(!Number.isFinite(y)||py<-25||py>h+25){opened=false;continue;}if(!opened){g.moveTo(px,py);opened=true}else g.lineTo(px,py)}g.stroke();g.restore();}
+ const points=connectSub.v19GraphMarks[key]||[];for(const p of points){const px=p[0]*w,py=p[1]*h;g.fillStyle='#1978ae';g.beginPath();g.arc(px,py,5.5,0,2*Math.PI);g.fill();g.strokeStyle='white';g.lineWidth=1.5;g.stroke()}
+ if(options.points&&cfg){for(const [x,y] of cfg.points){const px=ox+x*dx,py=oy-y*dy;if(px<0||px>w||py<0||py>h)continue;g.fillStyle='#e18c31';g.beginPath();g.arc(px,py,5,0,2*Math.PI);g.fill();g.font='12px sans-serif';g.fillText(`(${x},${y})`,Math.min(w-60,px+8),Math.max(14,py-7))}}
+};
+root.addEventListener('pointerdown',e=>{if(v19GraphTool!=='point')return;const can=e.target.closest('canvas[data-connect-graph]');if(!can)return;e.preventDefault();e.stopImmediatePropagation();const box=can.getBoundingClientRect(),key=connectGraphKey(),x=Math.max(0,Math.min(1,(e.clientX-box.left)/box.width)),y=Math.max(0,Math.min(1,(e.clientY-box.top)/box.height));(connectSub.v19GraphMarks[key] ||= []).push([x,y]);saveConnectSub();connectGraphPaint();},{capture:true,passive:false});
+function v19DirectJump(id,n){connectJump(id,n);}
+root.addEventListener('click',e=>{const btn=e.target.closest('[data-act^="v19"]');if(!btn)return;const a=btn.dataset.act,key=btn.dataset.key||'',actId=btn.dataset.id;let update=false;
+ if(a==='v19Lesson'){stage=Math.max(0,Math.min(13,Number(btn.dataset.stage)||0));mode='lesson';render();window.scrollTo(0,0);}
+ else if(a==='v19MissionJump'){v19DirectJump(actId,Number(btn.dataset.part));}
+ else if(a==='v19PuzzleTile'){const sp=V19_PUZZLES[key],p=v19PuzzleState(key),idx=Number(btn.dataset.i);if(sp&&idx>=0&&idx<sp.cards.length&&p.slots.length<sp.slots.length){p.slots.push(sp.cards[idx]);p.comment='';update=true}}
+ else if(a==='v19PuzzleUndo'){const p=v19PuzzleState(key);p.slots.pop();p.comment='';update=true}
+ else if(a==='v19PuzzleCheck'){const sp=V19_PUZZLES[key],p=v19PuzzleState(key);if(sp&&p.slots.length===sp.answer.length){if(p.slots.every((x,i)=>x===sp.answer[i])){p.wins++;p.comment='✨ 正しい形に組み立てられた！ 原題も自分の力で解いてみよう。';}else {p.comment='もう一度、底・指数・分子・分母を見直そう。';}}update=true;}
+ else if(a==='v19StepTile'){const st=V19_STEPS[key],p=v19PuzzleState(key),i=Number(btn.dataset.i);if(st&&Number.isInteger(i)&&i>=0&&i<st.length&&!p.order.includes(i)){p.order.push(i);p.comment='';update=true}}
+ else if(a==='v19StepUndo'){const p=v19PuzzleState(key);p.order.pop();p.comment='';update=true}
+ else if(a==='v19StepCheck'){const p=v19PuzzleState(key),st=V19_STEPS[key];if(st&&p.order.length===st.length){if(p.order.every((v,i)=>v===i)){p.wins++;p.comment='✨ 途中式を正しく並べられた！ どうしてこの順番か説明できるかな？';}else p.comment='もう一度、式変形の順番を確認しよう。';}update=true;}
+ else if(a==='v19GraphMode'){v19GraphTool=btn.dataset.mode==='point'?'point':'line';update=true;}
+ else if(a==='v19GraphToggle'){const p=(connectSub.v19GraphOptions[key] ||= {});p[btn.dataset.view]=!p[btn.dataset.view];update=true;}
+ else if(a==='v19GraphUndoPoint'){(connectSub.v19GraphMarks[key]||[]).pop();update=true;}
+ else if(a==='v19GraphClearPoint'){connectSub.v19GraphMarks[key]=[];update=true;}
+ else return;
+ if(update){saveConnectSub();const y=window.scrollY;render();requestAnimationFrame(()=>window.scrollTo(0,y));}
+ e.preventDefault();e.stopImmediatePropagation();},{capture:true});
+const v19OldHead=head;
+head=function(){return v19OldHead().replace('v18 ・ 数式パッド＋グラフ練習','v19 ・ 数式パズル＋復習確認');};
+const v19OldConnectExportResults=connectExportResults;
+connectExportResults=function(){v19OldConnectExportResults();};
+
+
+// v20: 教科書の各問題に紐づく補助練習。新しい問題文や架空の解法は生成しない。
+// 正解・誤答・既存の履歴はこれまでの採点処理を使用し、補助練習の達成は混ぜない。
+save.v20Puzzles = save.v20Puzzles && typeof save.v20Puzzles==='object' ? save.v20Puzzles : {};
+save.v20Support = save.v20Support === 'guided' ? 'guided':'regular';
+const v20OpenFor = Object.create(null);
+function v20ReadAtom(s,p){
+ if(p>=s.length)return null;
+ if(s[p]==='{') {let level=1, j=p+1;for(;j<s.length;j++){if(s[j]==='{')level++;if(s[j]==='}')level--;if(level===0)return {atom:s.slice(p+1,j),next:j+1};}return null;}
+ if(s[p]==='\\'){const m=s.slice(p).match(/^\\[A-Za-z]+/);return m?{atom:m[0],next:p+m[0].length}:null;}
+ return {atom:s[p],next:p+1};
+}
+function v20ParseFraction(raw){
+ let s=String(raw||'').trim().replace(/^\\dfrac/,'\\frac');let neg=s.startsWith('-');if(neg)s=s.slice(1).trim();
+ if(!s.startsWith('\\frac'))return null;let p=5,a=v20ReadAtom(s,p);if(!a)return null;p=a.next;let b=v20ReadAtom(s,p);if(!b||b.next!==s.length)return null;
+ if(!a.atom||!b.atom||a.atom.length>19||b.atom.length>19)return null;
+ if(/\\frac|\\text|[<>&]/.test(a.atom+b.atom))return null;
+ return {kind:'fraction',names:neg?['符号','分子','分母']:['分子','分母'],parts:neg?['-',a.atom,b.atom]:[a.atom,b.atom]};
+}
+function v20ParsePower(raw){
+ const s=String(raw||'').trim();const m=s.match(/^([a-zA-Z0-9])\^\{?(-?\d{1,3})\}?$/);
+ if(!m)return null;return {kind:'power',names:['底','指数'],parts:[m[1],m[2]]};
+}
+function v20PartsOf(raw){return v20ParseFraction(raw)||v20ParsePower(raw);}
+function v20Spec(q){
+ if(!q)return null;const p=v20PartsOf(q.a);if(!p)return null;
+ let cards=[...p.parts];
+ for(const w of q.w||[]){let r=v20PartsOf(w);if(r)cards.push(...r.parts);}
+ const extra=p.kind==='fraction'?['1','2','3','4','5','8','9','10','a','b','a^2','b^2','a^3','b^3','-']:['a','b','x','2','3','-1','1','-2','4','-3','5','-4','6'];
+ cards=[...new Set([...cards,...extra])];cards=cards.slice(0,9);
+ for(const s of p.parts)if(!cards.includes(s))cards.push(s);
+ // Always offer alternative building blocks while keeping every exact answer part.
+ return {...p,cards};
+}
+function v20Steps(q){
+ const lines=[...String(q?.steps||'').matchAll(/<div class="explain-line"><b>\d+\.<\/b>\s*([\s\S]*?)<\/div>/g)].map(m=>m[1]);
+ if(lines.length<2||lines.length>5)return null;
+ return lines;
+}
+function v20PuzzleRec(q){let k=String(q.id);let z=save.v20Puzzles[k];if(!z||typeof z!=='object') z=save.v20Puzzles[k]={parts:[],order:[],active:0,tab:'parts',winsParts:0,winsSteps:0,message:''};
+ if(!Array.isArray(z.parts))z.parts=[];if(!Array.isArray(z.order))z.order=[];return z;}
+function v20CardLabel(x){return M(x);}
+function v20OrderIndices(n){return [...Array(n).keys()].sort((a,b)=>((a*7+3)%n)-((b*7+3)%n));}
+function v20Panel(q){const spec=v20Spec(q),steps=v20Steps(q);if(!spec&&!steps)return '';
+ const rec=v20PuzzleRec(q),key=esc(String(q.id)),opened=!!v20OpenFor[q.id]||save.v20Support==='guided';const tab=rec.tab==='steps'&&steps?'steps':spec?'parts':'steps';
+ let body='';
+ if(tab==='parts'&&spec){
+ const slots=spec.names.map((name,i)=>`<button type="button" class="v20-slot ${rec.active===i?'active':''}" data-v20="focus" data-q="${key}" data-i="${i}"><small>${esc(name)}（タップして選択）</small><strong>${rec.parts[i]===undefined?'□':v20CardLabel(rec.parts[i])}</strong></button>`).join('');
+ const cards=[...spec.cards].sort((a,b)=>String(a).localeCompare(String(b),'ja'));
+ body=`<div class="v20-help">${spec.kind==='fraction'?'分子と分母を別々に考えよう。':'底と指数を別々に考えよう。'} 先に枠を選び、その枠に入れたいカードを押してね。</div><div class="v20-slots">${slots}</div><div class="v20-parts">${cards.map((c,i)=>`<button type="button" class="v20-tile" data-v20="tile" data-q="${key}" data-card="${esc(c)}" aria-label="${esc(c)}">${v20CardLabel(c)}</button>`).join('')}</div><div class="v20-choicebar"><button class="btn" data-v20="undo" data-q="${key}">↩ 1つ戻す</button><button class="btn" data-v20="reset" data-q="${key}">最初から</button><button class="btn primary" data-v20="check" data-q="${key}" ${spec.parts.some((x,i)=>rec.parts[i]===undefined)?'disabled':''}>✅ 組み立てを確認</button></div>`;
+ }else if(steps){
+ const selected=rec.order||[],remaining=v20OrderIndices(steps.length).filter(i=>!selected.includes(i));
+ body=`<p class="v20-note">この問題の解説から作った式変形カードです。正しい順番にタップして並べよう。解説を読む前の練習にも使えます。</p><ol class="v20-ordered">${selected.map(i=>`<li>${R(steps[i])}</li>`).join('')||'<li>まだ選んでいません</li>'}</ol><div class="v20-steps">${remaining.map(i=>`<button class="v20-stepcard" type="button" data-v20="step" data-q="${key}" data-i="${i}">${R(steps[i])}</button>`).join('')}</div><div class="v20-choicebar"><button class="btn" data-v20="stepUndo" data-q="${key}">↩ 1つ戻す</button><button class="btn" data-v20="stepReset" data-q="${key}">最初から</button><button class="btn primary" data-v20="stepCheck" data-q="${key}" ${selected.length!==steps.length?'disabled':''}>✅ 順番を確認</button></div>`;
+ }
+ return `<section class="v20-box"><button type="button" class="v20-open" data-v20="toggle" data-q="${key}" aria-expanded="${opened}">🧩 教科書の式パズル・途中式練習 ${opened?'▲':'▼'} <small>（任意）</small></button>${opened?`<div class="v20-note">教材の同じ問題を使います。補助練習だけでは、原題の○や得点は付きません。カードを使用した挑戦は「ヒントあり」として扱います。</div><div class="v20-tabs">${spec?`<button type="button" class="v20-tab ${tab==='parts'?'selected':''}" data-v20="parts" data-q="${key}">🔢 答えを組み立てる</button>`:''}${steps?`<button type="button" class="v20-tab ${tab==='steps'?'selected':''}" data-v20="steps" data-q="${key}">🪜 途中式の順番</button>`:''}</div>${body}${rec.message?`<div class="v20-result ${rec.message.startsWith('もう一度')?'warn':''}">${esc(rec.message)}</div>`:''}<div class="v20-foot">練習成功：式パズル ${rec.winsParts||0} 回／途中式 ${rec.winsSteps||0} 回。正式な○×は下の「回答して攻撃！」で記録します。</div>`:''}</section>`;
+}
+function v20SupportedCount(i){return (banks[i]||[]).filter(q=>!!v20Spec(q)).length;}
+const v20OldLesson=lesson;
+lesson=function(){let html=v20OldLesson();const qcount=v20SupportedCount(stage),all=availableQuestions(stage).length;
+ const selection=`<section class="v20-selection"><b>🧩 今回の取り組み方を選ぼう</b><p style="font-size:13px;margin:4px 0">式パズルは正答を教えるための補助練習です。数学の問題数は変えません。ヒントを使っても減点はありません。</p><div class="v20-choicebar"><button class="btn ${save.v20Support==='guided'?'primary':''}" data-v20="support" data-mode="guided">🌱 じっくり（補助練習を開いて始める）</button><button class="btn ${save.v20Support==='regular'?'primary':''}" data-v20="support" data-mode="regular">⚔ 通常（必要なときだけ開く）</button></div><p class="v20-note">このステージの問題候補 ${all}問のうち、${qcount}問は分数・累乗の答えの組み立てに対応。その他の問題も、解説に複数の手順があれば並べ替え練習ができます。</p></section>`;
+ return html.replace('<div class="rule"><strong>🔢 問題数を選ぼう',selection+'<div class="rule"><strong>🔢 問題数を選ぼう');
+};
+const v20OldFight=fight;
+fight=function(){let html=v20OldFight();if(!game?.deck?.length||feedback)return html;const panel=v20Panel(current());
+ return panel?html.replace('<details class="scratchbox"',panel+'<details class="scratchbox"'):html;
+};
+// True independent practice requires solving without any hints or puzzle assistance.
+const v20OldWriteRec=writeRec;
+writeRec=function(q,ok){let existed=!!save.records[q.id]?.mastered;v20OldWriteRec(q,ok);
+ if(!ok)return;
+ const assisted=Number(game?.hints||0)>0||!!game?.v20Used;
+ save.v20IndependentDays=save.v20IndependentDays||{};
+ if(!assisted){const ds=save.v20IndependentDays[q.id]||[];if(!ds.includes(today()))ds.push(today());save.v20IndependentDays[q.id]=ds;}
+ if(!existed && (save.v20IndependentDays[q.id]||[]).length<2){save.records[q.id].mastered=false;persist();}
+};
+const v20OldPrepare=prepare;
+prepare=function(){v20OldPrepare();game.v20Used=false;};
+const v20OldRetry=retry;
+retry=function(){v20OldRetry();game.v20Used=false;};
+root.addEventListener('click',event=>{
+ const b=event.target.closest('[data-v20]');if(!b)return;
+ const act=b.dataset.v20,key=b.dataset.q;
+ if(act==='support'){save.v20Support=b.dataset.mode==='guided'?'guided':'regular';persist();render();event.preventDefault();event.stopImmediatePropagation();return;}
+ if(!game||mode!=='fight'||feedback)return;
+ const q=current();if(key!==String(q.id))return;
+ const rec=v20PuzzleRec(q),spec=v20Spec(q),steps=v20Steps(q);
+ v20OpenFor[key]=true;rec.message='';
+ if(act==='toggle'){v20OpenFor[key]=!v20OpenFor[key];}
+ if(act==='parts'||act==='steps')rec.tab=act;
+ if(act==='focus'&&spec)rec.active=Math.max(0,Math.min(spec.parts.length-1,Number(b.dataset.i)||0));
+ if(act==='tile'&&spec){const p=String(b.dataset.card||'');if(spec.cards.includes(p)){rec.parts[rec.active||0]=p;rec.active=(rec.active+1)%spec.parts.length;game.v20Used=true;game.hints=Math.max(game.hints,1);}}
+ if(act==='undo'&&spec){let i=rec.active===0?spec.parts.length-1:rec.active-1;rec.parts[i]=undefined;rec.active=i;}
+ if(act==='reset'){rec.parts=[];rec.active=0;}
+ if(act==='check'&&spec){if(spec.parts.every((p,i)=>rec.parts[i]===p)){rec.winsParts=(rec.winsParts||0)+1;rec.message='✨ よくできました！ 正しい式になっています。';if(game?.v21Practice==='puzzle'){game.v21PuzzleAnswer=true;setTimeout(()=>{if(mode==='fight'&&!feedback&&game?.v21PuzzleAnswer)answer();},0);}}else rec.message='もう一度、各枠に入れた数・文字・指数を確かめてみよう。';}
+ if(act==='step'&&steps){const i=Number(b.dataset.i);if(steps[i]&& !rec.order.includes(i)){rec.order.push(i);game.v20Used=true;game.hints=Math.max(game.hints,1);}}
+ if(act==='stepUndo')rec.order.pop();
+ if(act==='stepReset')rec.order=[];
+ if(act==='stepCheck'&&steps){if(rec.order.length===steps.length&&rec.order.every((v,i)=>v===i)){rec.winsSteps=(rec.winsSteps||0)+1;rec.message='✨ 途中式の順番が正しいね！ どこで公式を使ったかも考えてみよう。';}else rec.message='もう一度、最初にすることから順に並べてみよう。';}
+ persist();const y=window.scrollY;render();requestAnimationFrame(()=>window.scrollTo(0,y));
+ event.preventDefault();event.stopImmediatePropagation();
+},{capture:true});
+const v20PrevHead=head;
+head=function(){return v20PrevHead().replace('v19 ・ 数式パズル＋復習確認','v20 ・ 教科書の式パズル＆学び直し');};
+
+
+// v21: 4 selectable modes; step ordering is opt-in rather than compulsory.
+const V21_MODES={
+ choice:{title:'四択モード',icon:'🔘',caption:'4つの選択肢から回答。はじめての学習に。'},
+ input:{title:'入力モード',icon:'✍️',caption:'整数・小数・分数を自分で入力。対応問題のみ。'},
+ puzzle:{title:'数式パズル',icon:'🧩',caption:'カードで答えを組み立てる。対応問題のみ。'},
+ mixed:{title:'おまかせ',icon:'✨',caption:'問題に応じて四択と入力を切り替え。'}
+};
+if(!V21_MODES[save.v21PlayMode])save.v21PlayMode='choice';
+if(typeof save.v21ShowSteps!=='boolean')save.v21ShowSteps=false;
+if(!save.v21Cursors||typeof save.v21Cursors!=='object')save.v21Cursors={};
+save.v20Support='regular';
+function v21Count(k,type){const arr=availableQuestions(k);if(type==='input')return arr.filter(q=>supportsInput(q)).length;if(type==='puzzle')return arr.filter(q=>!!v20Spec(q)).length;return arr.length;}
+function v21ModePicker(k=stage,home=false){
+ const cards=Object.entries(V21_MODES).map(([key,item])=>{
+  const count=v21Count(k,key),off=count===0,selected=save.v21PlayMode===key;
+  return `<button class="v21-modecard ${selected?'chosen':''}" type="button" data-v21="setMode" data-mode="${key}" ${off?'disabled':''} aria-pressed="${selected}"><strong>${item.icon} ${item.title}</strong><small>${item.caption}</small>${!home?`<small class="v21-count">第${k+1}ステージ：${count}問対応${off?'（選択不可）':''}</small>`:''}</button>`;
+ }).join('');
+ const help=home?'<p>モードは各ステージの開始前にも変更できます。</p>':'<p>問題の難易度ではなく、答え方を選びます。入力・パズルは対応する小問だけを出題します。</p>';
+ return `<section class="v21-modepanel ${home?'v21-home-selection':''}" aria-label="解答モードの選択"><h3>🎮 解答モードを選ぼう</h3>${help}<div class="v21-modegrid">${cards}</div>${!home?`<label class="v21-subtoggle"><input type="checkbox" data-v21-toggle="steps" ${save.v21ShowSteps?'checked':''}> <span><strong>🔀 途中式トレーニングを追加する（任意）</strong><br>必要なときだけ、解説の手順をカードで確かめる。通常はOFF。</span></label><p class="v21-info">選択したモードは保存されます。四択とおまかせは教科書の出題順を維持し、入力・パズルは専用の練習履歴として進みます。図や証明の問題はCONNECTの専用画面で学習できます。</p>`:''}</section>`;
+}
+const v21OldLesson=lesson;
+lesson=function(){
+ const html=v21OldLesson();
+ return html.replace(/<section class="v20-selection">[\s\S]*?<\/section>/,v21ModePicker(stage,false));
+};
+const v21OldHome=home;
+home=function(){
+ const html=v21OldHome();
+ return html.replace('例・練習と類題を5問ずつ進める','例・練習と類題／現在：'+V21_MODES[save.v21PlayMode].title);
+};
+const v21OldInputMode=inputMode;
+inputMode=function(q,test=false){
+ if(test)return v21OldInputMode(q,test);
+ if(mode!=='fight')return v21OldInputMode(q,test);
+ if(game?.v21Practice==='input'||save.v21PlayMode==='input')return supportsInput(q);
+ if(game?.v21Practice==='puzzle'||save.v21PlayMode==='puzzle')return false;
+ if(save.v21PlayMode==='choice')return false;
+ return v21OldInputMode(q,test);
+};
+function v21Eligible(k,type){return availableQuestions(k).filter(q=>type==='input'?supportsInput(q):type==='puzzle'?!!v20Spec(q):true);}
+const v21OldStart=start;
+start=function(review=false){
+ if(review||!['input','puzzle'].includes(save.v21PlayMode))return v21OldStart(review);
+ const type=save.v21PlayMode,items=v21Eligible(stage,type);
+ if(items.length===0){alert('このステージに'+V21_MODES[type].title+'に対応する問題はありません。四択かおまかせを選んでください。');return;}
+ const key=stage+'-'+type,offset=(Number(save.v21Cursors[key])||0)%items.length;
+ const requested=save.lengthMode==='mini'||save.lengthMode==='quick'?5:save.lengthMode==='long'?15:10;
+ const count=Math.min(items.length,requested);
+ const deck=Array.from({length:count},(_,i)=>items[(offset+i)%items.length]);
+ save.paused=null;persist();
+ game={deck,pos:0,questMini:true,goal:deck.length,hit:0,attempts:0,miss:0,combo:0,usedHint:0,repeat:false,corrected:0,wrong:[],opts:[],review:false,testing:false,finished:false,hits:[],v21Practice:type};
+ mode='fight';prepare();notes('learn');render();
+};
+const v21OldPrepare=prepare;
+prepare=function(){
+ v21OldPrepare();
+ if(game){game.v21PuzzleAnswer=false;
+  if(game.v21Practice==='puzzle'){
+   const q=current(),rec=v20PuzzleRec(q);rec.parts=[];rec.active=0;rec.message='';rec.tab='parts';v20OpenFor[q.id]=true;
+  }
+ }
+};
+const v21OldIsAnswerReady=isAnswerReady;
+isAnswerReady=function(){if(mode==='fight'&&game?.v21Practice==='puzzle')return !!game?.v21PuzzleAnswer;return v21OldIsAnswerReady();};
+const v21OldEvaluateAnswer=evaluateAnswer;
+evaluateAnswer=function(){if(mode==='fight'&&game?.v21Practice==='puzzle')return !!game?.v21PuzzleAnswer;return v21OldEvaluateAnswer();};
+const v21OldComplete=complete;
+complete=function(){
+ if(!game?.v21Practice)return v21OldComplete();
+ const type=game.v21Practice, key=stage+'-'+type,all=v21Eligible(stage,type);
+ save.v21Cursors[key]=((Number(save.v21Cursors[key])||0)+game.deck.length)%Math.max(1,all.length);
+ const oldCursor=save.questCursor[stage];save.questCursor[stage]=-game.deck.length;
+ try{v21OldComplete()}finally{save.questCursor[stage]=oldCursor;persist();}
+};
+const v21OldPausedSnapshot=pausedSnapshot;
+pausedSnapshot=function(){const s=v21OldPausedSnapshot();if(s&&game?.v21Practice)s.v21Practice=game.v21Practice;return s;};
+const v21OldResumeGame=resumeGame;
+resumeGame=function(){const s=save.paused?{...save.paused}:null;v21OldResumeGame();if(s?.v21Practice&&game&&mode==='fight'){game.v21Practice=s.v21Practice;save.v21PlayMode=s.v21Practice;prepare();render();}};
+// The optional step-ordering activity is hidden in normal play unless enabled.
+const v21OldSteps=v20Steps;
+v20Steps=function(q){return save.v21PlayMode==='puzzle'||!save.v21ShowSteps?null:v21OldSteps(q);};
+const v21OldFight=fight;
+fight=function(){
+ if(mode==='fight'&&game?.v21Practice==='puzzle'&&!feedback){v20OpenFor[current().id]=true;v20PuzzleRec(current()).tab='parts';}
+ let html=v21OldFight();const isPuzzle=game?.v21Practice==='puzzle';
+ if(!isPuzzle&&!save.v21ShowSteps)html=html.replace(/<section class="v20-box">[\s\S]*?<\/section>/,'');
+ if(!isPuzzle&&save.v21ShowSteps&&!v21OldSteps(current()))html=html.replace(/<section class="v20-box">[\s\S]*?<\/section>/,'');
+ if(isPuzzle&&!feedback){
+  html=html.replace(/<div class="choices">[\s\S]*?<\/div>/,'');
+  html=html.replace(/<button class="btn primary" data-act="answer"[^>]*>[\s\S]*?<\/button>/,'');
+  html=html.replace('<section class="v20-box">','<div class="v21-puzzle-direction">数式カードを組み立てて「組み立てを確認」を押すと、正式な回答として記録されます。</div><section class="v20-box">');
+  html=html.replace('補助練習だけでは、原題の○や得点は付きません。','このモードでは、正しく組み立てると原題の正解になります。');
+  html=html.replace('カードを使用した挑戦は「ヒントあり」として扱います。','パズルでの正解は、自力での数式入力とは区別して記録します。');
+  html=html.replace('🧩 教科書の式パズル・途中式練習','🧩 この問題の答えを組み立てる');
+  html=html.replace('（任意）</small>','（このモードの回答方法）</small>');
+  html=html.replace('正式な○×は下の「回答して攻撃！」で記録します。','正しく組み立てると、正式な○が記録されます。');
+ }
+ if(game&&!feedback)html=html.replace('<div class="card challenge">',`<div class="card challenge"><div class="v21-modepill">${V21_MODES[game.v21Practice||save.v21PlayMode]?.icon||'🎮'} ${V21_MODES[game.v21Practice||save.v21PlayMode]?.title||'おまかせ'}</div>`);
+ return html;
+};
+root.addEventListener('click',e=>{
+ const btn=e.target.closest('[data-v21="setMode"]');if(!btn)return;
+ const next=btn.dataset.mode;if(!V21_MODES[next])return;
+ save.v21PlayMode=next;save.v20Support='regular';save.teacher.freeMode=next==='mixed'?'mixed':next==='input'?'input':'choice';persist();render();
+ e.preventDefault();e.stopImmediatePropagation();
+},{capture:true});
+root.addEventListener('change',e=>{if(e.target.dataset.v21Toggle!=='steps')return;save.v21ShowSteps=!!e.target.checked;persist();render();});
+const v21OldHead=head;
+head=function(){return v21OldHead().replace('v20 ・ 教科書の式パズル＆学び直し','v21 ・ 解答モードを選べる冒険');};
+
+if(v19MissionList.length)mode="connect";render();
 })();
 </script></body></html>
